@@ -1,6 +1,7 @@
 ---
 title: "Contact"
 logo: "/img/logo.svg"
+draft: true
 contact_entries:
   - heading: Location
     text: "3153 Lynn Avenue, South San Francisco, California 94080"

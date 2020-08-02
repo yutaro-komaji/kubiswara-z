@@ -1,13 +1,75 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+{{ partial "jumbotron" (dict "imageUrlSp" .Params.imageSp "imageUrlPc" .Params.imagePc "title" .Title "subtitle" .Params.subtitle) }}
 
-{{ partial "short-text" .Params.blurb}}
+<!-- {{ partial "short-text" .Params.blurb}} -->
 
-{{ partial "2-up" .Params }}
+<!-- {{ partial "2-up" .Params }} -->
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+<!-- {{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }} -->
 
-{{ partial "blog" . }}
+<!-- {{ partial "blog" . }} -->
 
+<div class="footer-nav" ontouchstart="">
+	<div class="footer-nav-inner">
+		<a href="#artists">Artists</a>
+	</div>
+</div>
+<div id="artists">
+	<div class="picbtn clearfix">
+		<div class="picbtn-content col-md-4">
+			<a href="/amis-amants/">
+				<div class="picbtn-content-amis picbtn-bg"></div>
+				<p class="picbtn-content__title">amis amants</p>
+				<p class="picbtn-content__text"><!-- amis amants --></p>
+			</a>
+		</div>
+		<div class="picbtn-content col-md-4">
+			<a href="/wyfo/">
+				<div class="picbtn-content-wyfo picbtn-bg"></div>
+				<p class="picbtn-content__title">While You Freak Out</p>
+				<p class="picbtn-content__text"><!-- While You Freak Out --></p>
+			</a>
+		</div>
+	</div>
+	<div class="picbtn clearfix">
+		<div class="picbtn-content col-md-4">
+			<a href="/kohei-miyazaki/">
+				<div class="picbtn-content-kohei picbtn-bg"></div>
+				<p class="picbtn-content__title">Kohei Miyazaki</p>
+				<p class="picbtn-content__text"><!-- Kohei Miyazaki --></p>
+			</a>
+		</div>
+		<div class="picbtn-content col-md-4 pointer-none">
+			<a href="#">
+				<div class="picbtn-content-lmc picbtn-bg"></div>
+				<p class="picbtn-content__title">Light My Cigarette</p>
+				<p class="picbtn-content__text">coming soon...</p>
+			</a>
+		</div>
+	</div>
+	<div class="picbtn clearfix">
+		<div class="picbtn-content col-md-4 pointer-none">
+			<a href="#">
+				<div class="picbtn-content-beve picbtn-bg"></div>
+				<p class="picbtn-content__title">BeVe</p>
+				<p class="picbtn-content__text">coming soon...</p>
+			</a>
+		</div>
+		<div class="picbtn-content col-md-4 pointer-none">
+			<a href="#">
+				<div class="picbtn-content-umsg picbtn-bg"></div>
+				<p class="picbtn-content__title">ウマすぎてごめんね</p>
+				<p class="picbtn-content__text">coming soon...</p>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="footer-nav" ontouchstart="">
+	<div class="footer-nav-inner">
+		<div class="footer-socials">
+			<a href="https://twitter.com/kubiswara_z" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</div>
 {{ end }}

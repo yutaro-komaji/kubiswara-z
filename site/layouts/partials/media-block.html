@@ -1,12 +1,15 @@
-<div class="flex-m mhn3-m mb4">
+<div class="flex-m mhn3-m">
 
   <div class="ph3-m w-50-m">
-    <img src="{{.imageUrl}}" alt="" class="db mb2">
+  	<a href="{{.imageUrl}}">
+	    <img src="{{.image}}" alt="" class="db mb2" style="box-shadow: 5px 5px 10px #000;">
+    </a>
   </div>
 
-  <div class="ph3-m w-50-m">
-    <h3 class="f3 b lh-title mb1">{{.heading}}</h3>
-    <p>{{.text}}</p>
+  <div class="ph3-m w-50-m pt3">
+    <h3 class="f4 b lh-title mb1">{{.heading}}</h3>
+    <p class="f6">{{.text}}</p>
+    <p class="f7">{{.text2}}</p>
   </div>
 
 </div>

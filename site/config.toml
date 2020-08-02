@@ -1,7 +1,7 @@
 baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "Homepage"
+languageCode = "jp-ja"
+languageLang = "ja"
+title = "kubiswara'z Records"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
