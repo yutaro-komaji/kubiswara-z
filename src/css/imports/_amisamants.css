@@ -1,0 +1,419 @@
+.am h1,
+.am h2,
+.am h3,
+.am h4,
+.am h5,
+.am h6,
+.am p {
+	font-family: "Roboto Condensed",Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+footer .footer-contents-wrp {
+	display: block;
+	position: relative;
+	bottom: 0;
+	padding: 30px 0;
+	width: 100%;
+	color: #fff;
+	background-color: rgba(0,0,0,0.8);
+}
+footer .footer-contents {
+	font-size: 70%;
+	text-align: center;
+}
+.main-contents {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+.inner {
+	display: block;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%,-50%);
+}
+.hdg-lv1 {
+	font-size: 40px;
+}
+.hdg-lv2 {
+	font-size: 15px;
+}
+.txt-01 {
+	margin: 12px;
+	font-size: 12px;
+}
+.txt-02 {
+	display: block;
+	margin: 16px 5px;
+	padding: 15px 0;
+	font-size: 16px;
+	text-align: center;
+	line-height: 1.4;
+}
+.txt-03 {
+	display: block;
+	margin: 30px 5px 0;
+	padding: 10px 0 0;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.4;
+}
+.txt-small {
+	font-size: 11px;
+}
+.btn-wrp {
+	display: block;
+	margin: 20px;
+	padding: 10px;
+	background-color: #eee;
+}
+.btn-plane {
+	text-decoration: none;
+	display: block;
+	position: relative;
+	margin: 15px;
+	padding: 15px;
+	max-width: 280px;
+	height: 60px;
+	border-radius: 10px;
+	opacity: 0.7;
+}
+.btn-plane:hover {
+	opacity: 1;
+	transition: 0.2s;
+}
+.btn-01 {
+	background-color: #00bfff;
+}
+.btn-02 {
+	background-color: #696969;
+}
+.btn-03 {
+	background-color: #444;
+}
+.btn-inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	transform: translate(-50%,-50%);
+}
+.video {
+	position: relative;
+	height: 0;
+	margin: 20px;
+	padding: 30px 0 56.25%;
+	overflow: hidden;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*-----amis amants css-----*/
+.am.container {
+	background: rgba(0,191,255,0.7);
+}
+.am header {
+	display: block;
+	position: relative;
+	padding: 5px 0 20px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 250px;
+	background-color: rgba(0,0,0,0.9);
+	background-image: url('/img/amis-mv.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 7px 7px rgba(0,0,0,0.4);
+	z-index: 10;
+}
+.am .over-black::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.am .main-visual {
+	display: contents;
+	width: 100%;
+}
+.am .main-visual img {
+	width: 100%;
+}
+.am .main-contents {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+    max-width: 350px;
+}
+.am .hdg-lv1-wrp {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 45%;
+	left: 4%;
+	width: 100%;
+	max-width: 170px;
+	max-height: 90px;
+	text-align: center;
+	transform: translate(-4%,-45%);
+	justify-content: space-around;
+}
+.am .hdg-lv2-wrp {
+	display: contents;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+.am .hdg-lv1 {
+	padding: 5px;
+	font-size: 10px;
+	line-height: 1.2;
+	color: #fff;
+	text-shadow:0 0 10px #222;
+}
+.am .hdg-lv1 .cursive {
+	font-family: 'Pacifico', cursive;
+	display: block;
+	margin: 5px auto;
+	font-size: 50px;
+	letter-spacing: -2px;
+	line-height: 1.1;
+}
+.am .hdg-lv2 {
+	margin-bottom: 15px;
+	padding: 15px 0 0;
+	font-size: 15px;
+	font-weight: bold;
+	color: #da9799;
+	border-bottom: solid 3px #da9799;
+}
+.am .hdg-lv1,
+.am .hdg-lv2 {
+	text-align: center;
+}
+.am .content-wrp-01 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 20px 0;
+	padding: 15px 15px 30px;
+	top: 0;
+	left: 50%;
+	max-width: 350px;
+	height: auto;
+	transform: translateX(-50%);
+	background-color: #fff;
+}
+.am .content-wrp-01 .txt-02 {
+	margin: 0 0;
+	padding: 3px 3px;
+	font-size: 95%;
+	line-height: 1.7;
+}
+.am .content-wrp-01 .embed {
+	display: block;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.am .content-wrp-01.bg-02 {
+	background-color: rgba(0,0,0,0.8);
+}
+.am .live-box {
+	margin: 15px 0;
+	padding: 5px 0;
+	width: 100%;
+}
+.am .live-box.special {
+	display: block;
+	padding: 25px 0;
+    background-color: #FF427A;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #000;
+}
+.am .live-box .live-image {
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.am .live-box .live-image img {
+	width: 100%;
+}
+.am .live-box .live-info {
+	margin: 0 15px;
+	color: #fff;
+}
+.am .live-box .live-info .live-date {
+	padding-right: 8px;
+	font-weight: bold;
+	font-size: 110%;
+	line-height: 1.8;
+}
+.am .live-box .live-info .live-where {
+	font-weight: bold;
+	font-size: 100%;
+	line-height: 1.8;
+}
+.am .live-box .live-info .live-act {
+	padding-bottom: 20px;
+	font-size: 85%;
+	line-height: 1.6;
+}
+.am .live-box .live-info .live-time {
+	line-height: 1.6;
+	font-weight: bold;
+}
+.am .live-box .live-info .live-price {
+	line-height: 1.6;
+	font-weight: bold;
+}
+.am .live-box .live-info .live-about {
+	font-size: 80%;
+	line-height: 1.7;
+}
+
+.am .btn-wrp {
+	background-color: initial;
+}
+.am .btn-plane.btn-03 {
+	margin: 0 auto;
+	opacity: 1;
+    box-shadow: 5px 5px 10px #000;
+} 
+.am .btn-plane.btn-03 .btn-inner {
+	/*line-height: 1.4;
+	font-size: 95%;*/
+}
+
+/*.am .fa-twitter:before {
+    content: "\f099";
+}
+.am .fa-music:before {
+    content: "\f58f";
+}
+
+.am .l-header {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.am .l-header .l-header__sns {
+	display: flex;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+}
+.am .l-header .l-header__sns ul li {
+    text-align: center;
+    transition: all .3s;
+    margin-left: 5px;
+}
+.am .l-header .l-header__sns ul li.icon-youtube {
+    position: relative;
+    width: 36px;
+    height: 36px;
+}
+.am .l-header .l-header__sns ul li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+.am .l-header .l-header__sns ul li.icon-youtube::before {
+    pointer-events: none;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.am .l-header .l-header__sns ul li.icon-youtube::before {
+    background: url(/amis-amants/common/images/youtube.png) center center no-repeat;
+    background-size: contain;
+}
+.am .l-header .l-header__sns ul li a i {
+    font-size: 22px;
+    line-height: 36px;
+    color: #212121;
+}*/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+/*-----PC css-----*/
+
+@media screen and (min-width:769px){
+	.hdg-lv1 {
+		font-size: 50px;
+	}   
+	.hdg-lv2 {
+		font-size: 30px;
+	}
+	.txt-01 {
+		margin: 15px;
+		font-size: 15px;
+	}
+	.txt-02 {
+		margin: 20px;
+		font-size: 20px;
+	}
+	.btn-wrp {
+		display: flex;
+		justify-content: space-between;
+		margin: 20px auto;
+		padding: 10px;
+		max-width: 800px;
+	}
+	.btn-plane {
+		margin: 30px;
+		padding: 25px;
+		width: 250px;
+		border-radius: 15px;
+	}
+	.video {
+		margin: 50px;
+	}
+	.am header {
+		height: 700px;
+		background-position: top;
+	}
+	.am .hdg-lv1-wrp {
+		max-width: 450px;
+		height: 250px;
+	}
+	.am .hdg-lv1 {
+		font-size: 20px;		
+	}
+	.am .hdg-lv1 .cursive {
+		letter-spacing: 1px;
+	}
+	.am .hdg-lv2 {
+		font-size: 30px;
+	}
+	.am .main-contents {
+		margin: 0 auto;
+	    max-width: 750px;
+	}
+	.am .content-wrp-01 {
+		max-width: 1024px;
+	}
+}
