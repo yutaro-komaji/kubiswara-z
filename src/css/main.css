@@ -44,6 +44,7 @@
 @import './imports/_display';
 @import './imports/_flexbox';
 @import './imports/_floats';
+@import './imports/_fontawesome';
 @import './imports/_font-style';
 @import './imports/_font-weight';
 @import './imports/_forms';
@@ -59,6 +60,7 @@
 @import './imports/_spacing';
 @import './imports/_text-decoration';
 @import './imports/_text-align';
+@import './imports/_text-shadow';
 @import './imports/_text-transform';
 @import './imports/_type-scale';
 @import './imports/_typography';
@@ -68,6 +70,9 @@
 @import './imports/_vertical-align';
 @import './imports/_states';
 @import './imports/_z-index';
+@import './imports/_amisamants';
+@import './imports/_wyfo';
+@import './imports/_kohei-miyazaki';
 @import './imports/_styles';
 @import './imports/_buttons';
 @import './imports/_svg';
