@@ -1,0 +1,108 @@
+{{ define "main" }}
+<div class="am container">
+	<header>
+		<div class="over-black"></div>
+		<div class="hdg-lv1-wrp">
+			<div class="main-visual">
+				<img src="/img/amis-logo.gif" alt="amis amants">
+			</div>
+			<h1 class="hdg-lv1">OFFICIAL WEB SITE</h1>
+		</div>
+	</header>
+
+	<main class="main-contents">
+		<div class="content-wrp-01 bg-01">
+		<div class="hdg-lv2-wrp">
+			<h2 class="f4 b lh-title mb2 center tc mw4" style="margin-top: 1.3rem; margin-bottom: 1rem; color: #da9799; border-bottom: solid 3px #da9799;">Introduction</h2>
+			</div>
+			<p class="txt-02"><strong class="embed">amis amants<span class="txt-01">/ アミス アマンツ</span></strong></p>
+			<p class="f7 tc">名古屋の2ピースロックバンド。<br>バンド形式でのライブ活動を休止していたが、9/18（金）に八事Sound Note にて復活ライブが決定！<br><span class="txt-small">Gt.&Vo.</span>高木勇気はソロでも活動中。</p>
+		</div>
+		<!-- <div class="content-wrp-01 bg-02">
+			<div class="hdg-lv2-wrp">
+				<h2 class="hdg-lv2">Live</h2>
+			</div>
+			<div class="live-box">
+				<p class="live-info">
+					<span class="">第249回『#名古屋音楽交差点』</span><br>
+					<span class="live-date">3/21(土)</span>
+					<span class="live-where">名古屋・栄 DreamCube</span>
+					<span class="live-image">
+						<img src="https://pbs.twimg.com/media/ESQMsLQUwAEcTve.jpg" alt="#名古屋音楽交差点">
+					</span>
+					<span class="live-act">坂梨優希 / 杉村昭輝  / Lily / 高木勇気 (amis amants) / 世憂子 / MeGuMi / 紫とピンクメトセトラ / Spirit☆</span><br>
+					<span class="live-time">Open 16:30 / Start 17:00</span><br>
+					<span class="live-price">Adv &yen;2,000(+1D) / Door &yen;2,500(+1D)</span>
+				</p>
+			</div>
+			<div class="live-box">
+				<p class="live-info">
+					<span class="live-date">4/12(日)</span>
+					<span class="live-where">名古屋・新栄 soul kitchen</span>
+					<span class="live-act"></span>
+					<span class="live-time"></span>
+					<span class="live-price"></span><br>
+					<span class="live-about">詳細未定</span>
+				</p>
+			</div>
+			<div class="live-box special">
+				<p class="live-info">
+					<span class="live-date">4/18(土)</span>
+					<span class="live-where">名古屋・吹上 鑪ら場</span><br>
+					<span class="live-about">1st mini Album 『指輪』 リリース記念イベント</span><br>
+					<span class="live-image">
+						<img src="/amis-amants/common/images/info/20200418.jpg" alt="アミスアマンツで居よう。">
+					</span>
+					<span class="live-time">Open 17:30 / Start 18:00</span><br>
+					<span class="live-price">&yen;1,500(+1D)</span><br>
+					<span class="live-about"></span>
+				</p>
+			</div>
+		</div> -->
+		{{ partial "a-2col" .Params.intro }}
+		<!-- <div class="btn-wrp">
+			<a href="https://linkco.re/PrXDG72g" class="btn-03 btn-plane" target="_blank">
+				<span class="btn-inner">1st Single 『のりしろ』</span>
+			</a>
+		</div>
+		<div class="btn-wrp">
+			<a href="https://linkco.re/tXmg1np5" class="btn-03 btn-plane" target="_blank">
+				<span class="f6 white b btn-inner">1st mini Album 『指輪』</span>
+			</a>
+		</div> -->
+
+		<div class="mw7 center ph3 pt5 pb5">
+
+			{{ range $index, $element := .Params.values }}
+				{{ if modBool $index 2 }}
+					{{ partial "media-block" $element }}
+					{{ else }}
+					{{ partial "media-block-reverse" $element }}
+				{{ end }}
+			{{ end }}
+			<div class="tc mt3">
+		      <a href="https://amisamants.official.ec/items/28329733" class="btn raise">公式オンラインショップ</a>
+		    </div>
+		</div>
+		
+		<div class="mb5">
+			<p class="txt-03">『指輪』/ 高木勇気</p>
+			<div class="video">
+				<iframe src="https://www.youtube.com/embed/QcsEb7w-fDo?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<p class="txt-03">『走り雲』/ amis amants</p>
+			<div class="video">
+				<iframe src="https://www.youtube.com/embed/i6g44UO_hVg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="footer-nav fixed" ontouchstart="">
+			<div class="footer-nav-inner">
+				<div class="footer-socials">
+					<a href="https://www.tunecore.co.jp/artist/YukiTakagi" target="_blank"><i class="fas fa-headphones"></i></a>
+					<a href="https://twitter.com/AmisAmants_jp" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://amisamants.official.ec/" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+				</div>
+			</div>
+		</div>
+	</main>
+{{ end }}

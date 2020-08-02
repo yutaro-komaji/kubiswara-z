@@ -1,0 +1,27 @@
+<div class="bg-off-white pv4">
+	<div class="ph1 mw7 center">
+		<div class="hdg-lv2-wrp">
+			<h2 class="f4 b lh-title mb2 center tc mw4" style="color: #da9799; border-bottom: solid 3px #da9799;">{{.heading}}</h2>
+		</div>
+		<p class="mb4 mw6">{{.description}}</p>
+
+		<div class="flex-ns flex-wrap mhn2-ns mb3">
+			{{ range .blurbs }}
+				<div class="ph2-ns w-50-ns mb4 ph3">
+					<img src="{{ .image }}" alt="" class="center db mb3" style="width: 240px">
+					<h3 class="tc f6">{{ .subTitle }}</h3>
+					<p class="tc f5 b">{{ .text }}</p>
+					<div class="tc">
+				      <a href="{{.imgUrl}}" class="btn raise">{{ .btnText }}</a>
+				    </div>
+					<p class="tc f7 ph4 pt3 mb0">{{ .desc }}</p>
+					<ul class="tl f7 ph4">
+						{{ range .list }}
+							<li class="tl">{{ .listItem }}</li>
+						{{ end }}
+					</ul>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+{{ partial "jumbotron" (dict "imageUrlPc" .Params.image "imageUrlSp" .Params.image "title" .Title) }}
+
+
+
+
+{{ with .Params.main }}
+
+
+<!-- Image grid -->
+{{ partial "image-grid" . }}
+{{ end }}
+
+
+
+{{ end }}

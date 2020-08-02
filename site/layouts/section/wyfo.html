@@ -1,0 +1,87 @@
+{{ define "main" }}
+<section id="loading" class="loading">
+  <div class="loading__img">
+    <img src="/img/wyfo-load.png">
+  </div>
+</section>
+<style>
+.loading {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+}
+.loading__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.loading__img img {
+  width: 200px;
+  animation: rotate-anime 3.5s linear infinite;
+}
+@keyframes rotate-anime {
+  0%  {transform: rotate(0);}
+  100%  {transform: rotate(360deg);}
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+  var loading = $("#loading");
+  var isHidden = function(){
+    loading.fadeOut(1000);
+  };
+  setTimeout(isHidden,1000);
+});
+</script>
+<div class="wyfo">
+
+<div class="pv6 ph3 bg-center cover wyfo-h1" style="background-image: url('/img/img-hdg-wyfo.jpg')">
+  <div class="mw7 center ph3">
+    <div class="db mb3">
+      <div class="mw7 relative bg-fix-primary mb3">
+        <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
+          While You Freak Out
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mw7 center ph3 mv5">
+
+  {{ range $index, $element := .Params.releace }}
+      {{ partial "w-block-movie" $element }}
+  {{ end }}
+
+  {{ range $index, $element := .Params.biography }}
+      {{ partial "w-block" $element }}
+  {{ end }}
+
+</div>
+</div>
+
+<div class="footer-nav fixed" ontouchstart="">
+  <div class="footer-nav-inner">
+    <div class="footer-socials">
+      <!-- <a href="https://www.tunecore.co.jp/artist/#" target="_blank"><i class="fas fa-headphones"></i></a> -->
+      <a href="https://twitter.com/WYFO_official" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <!-- <a href="#" target="_blank"><i class="fas fa-shopping-cart"></i></a> -->
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+(function () {
+	$(function(){
+		$("body:has(div.wyfo)").addClass("wyfo-wrp");
+	});
+})(jQuery);
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Khand&display=swap" rel="stylesheet">
+{{ end }}
