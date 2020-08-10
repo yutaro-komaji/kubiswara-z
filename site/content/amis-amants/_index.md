@@ -23,12 +23,18 @@ intro:
         - listItem: 2. 指輪
         - listItem: 3. ふたりの話
         - listItem: 4. 助手席
+
+    - image: /img/img-amis-gray.jpg
+      imgUrl: "https://linkco.re/6y4e33vt"
+      btnText: 聴いてみる
+      subTitle: 2nd Single
+      text: 「グレー」
 values:
   - heading: "CD版 「指輪」"
     text: >
       配信版にはない限定トラック「アミスアマンツ」を含めた至極の５曲入り。￥1,000(税込)。
     text2: >
-      1.煙草も吸えるさ 2.指輪 3.ふたりの話 4.助手席 5.アミスアマンツ(CD版限定)
+      1.煙草も吸えるさ / 2.指輪 / 3.ふたりの話 / 4.助手席 / 5.アミスアマンツ(CD版限定)
     imageUrl: "https://amisamants.official.ec/items/28329733"
     image: "/img/img-al-ring.jpg"
 ---
