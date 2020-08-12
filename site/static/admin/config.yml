@@ -88,3 +88,13 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Image, name: image, widget: image}
           - label: Values
             name: values
+      - file: "site/content/wyfo/_index.md"
+        label: "While You Freak Out official"
+        name: "While You Freak Out"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Pageurl, name: pageUrl, widget: string}
+          - {label: Image, name: image, widget: image}
+          - label: Values
+            name: values
