@@ -6,10 +6,10 @@
 	</a>
 
 	<!-- Primary Nav -->
-	<!-- <ul class="flex b grey-3">
-		<li><a href="/amis-amants/" class="pa3 no-underline db">amis amants</a></li>
-		<li><a href="/wyfo/" class="pa3 no-underline db">While You Freak Out</a></li>
-		<li><a href="/kohei-miyazaki/" class="pa3 no-underline db">Kohei Miyazaki</a></li>
-	</ul> -->
+	<ul class="flex b grey-2">
+		{{ range .Params.pagelist }}
+			<li><a href="{{ .listItem }}" class="pa3 no-underline db">{{ .listItemtxt }}</a></li>
+		{{ end }}
+	</ul>
 
 </nav>

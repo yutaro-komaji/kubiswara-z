@@ -13,7 +13,7 @@ release:
     btnText: "LISTEN"
     btnUrl: "https://linkco.re/eFbPf7Nq"
     text: >
-      各種ストリーミングサービスで配信中!
+      available on streaming services
     iframeUrl: "Iu2cdhIEW2Y"
     secId: "release"
 biography:
@@ -22,14 +22,14 @@ biography:
     btnText: "Twitter"
     btnUrl: "https://twitter.com/WYFO_official"
     text: >
-      2017年結成。平均年齢21歳。愛知県を拠点とし、2020年6月より2人体制での活動となる。Hard Rock、UK Rock、Hip Hopなどの様々な音楽に影響を受け、ジャンルを超えた楽曲で音楽シーンを盛り上げる。
+      While You Freak Out is a rock band formed in Aichi Perfecture, Japan in 2017. The group consists of Seitaro (vocals,guitar), and Yamaga (base,chorus). The band has been influenced by Hard Rock, UK Rock, and Hip Hop, etc., They electrify the music scene with songs that transcend genres.
     imageUrl: "/img/img-wyfo-bio.jpg"
     secId: "biography"
 description:
-    2017年結成。平均年齢21歳。愛知県を拠点とし、2020年6月より2人体制での活動となる。Hard Rock、UK Rock、Hip Hopなどの様々な音楽に影響を受け、ジャンルを超えた楽曲で音楽シーンを盛り上げる。
+    While You Freak Out is a rock band formed in Aichi Perfecture, Japan in 2017. The group consists of Seitaro (vocals,guitar), and Yamaga (base,chorus). The band has been influenced by Hard Rock, UK Rock, and Hip Hop, etc., They electrify the music scene with songs that transcend genres.
 pagelist:
-  - listItem: "#"
+  - listItem: "/wyfo/"
     listItemtxt: JP
-  - listItem: "/wyfo/en/"
+  - listItem: "#"
     listItemtxt: EN
 ---
