@@ -35,7 +35,7 @@ live:
     placeUrl: "https://goo.gl/maps/vacs7Zbmi2fsBgEbA"
     actText: Nostal Phraysic / While You Freak Out / 聲 / + 1 artist
     ticket: >
-      Adv: \2,100 (+1D) / Door: \2,600 (+1D) / 配信:￥1,800
+      Adv: ￥2,100 (+1D) / Door: ￥2,600 (+1D) / 配信: ￥1,800
   - title: "TIGHT ROPE 19th anniversary 【SOLD OUT vol.--】"
     dateText: 2020.9.21(MON)
     timeText: OPEN 未定 / START 未定
@@ -43,7 +43,7 @@ live:
     placeUrl: "https://goo.gl/maps/6KZx2DmREetGHYUy6"
     actText: THE KOOL OPERATORS / While You Freak Out / and more...
     ticket: >
-      Adv: \2,000 / Door: \2,500
+      Adv: ￥2,000 / Door: ￥2,500
 description:
     2017年結成。平均年齢21歳。愛知県を拠点とし、2020年6月より2人体制での活動となる。Hard Rock、UK Rock、Hip Hopなどの様々な音楽に影響を受け、ジャンルを超えた楽曲で音楽シーンを盛り上げる。
 pagelist:
