@@ -56,33 +56,51 @@ $(function(){
 	</div>
 </section>
 
-<div class="anchor">
-	<ul class="b">
-	{{ range $index, $element := .Params.anchor }}
-			{{ partial "w-anchor" $element }}
-	{{ end }}
-	</ul>
-</div>
-
 <div class="mw7 center ph3 mv5">
+	<div class="anchor">
+		<ul class="b">
+			<!-- <li><a href="javascript:void(0);" class="no-underline" data-tab="release">RELEASE</a></li> -->
+		{{ range $index, $element := .Params.anchor }}
+				{{ partial "w-anchor" $element }}
+		{{ end }}
+		<div class="clear"></div>
+		</ul>
+	</div>
+	<div class="tabContainer w-block">
+		{{ range $index, $element := .Params.release }}
+				{{ partial "w-block-movie" $element }}
+		{{ end }}
 
-	{{ range $index, $element := .Params.release }}
-			{{ partial "w-block-movie" $element }}
-	{{ end }}
+		{{ range $index, $element := .Params.biography }}
+				{{ partial "w-block" $element }}
+		{{ end }}
 
-	{{ range $index, $element := .Params.biography }}
-			{{ partial "w-block" $element }}
-	{{ end }}
-
+		<section class="mb2 pv2 Tabcondent" id="live">
+			<div class="f4 b lh-title w-block-hdg">
+				<h2 class="tc pv3">LIVE</h2>
+			</div>
+			{{ range .Params.live }}
+					<div class="mb5 ph3 ph0-ns w-100-m">
+						<h3 class="f5 w-block-title tc pv3 pt0-m">{{.title}}</h3>
+						<div class="center ph6-ns">
+							<p class="f7 tc mb2 grey-2"><span class="f6 white">{{.dateText}}</span><br>{{.timeText}}</p>
+							<p class="f5 tc mb2 white"><a href="{{ .placeUrl }}" target="_blank">{{.placeText}}</a></p>
+							<p class="f7 tl tc-ns mb2 grey-2">Act : <span class="white">{{.actText}}</span></p>
+							<p class="f7 tl tc-ns ph6-m grey-2">Ticket : <span class="f6 white">{{.ticket}}</span></p>
+						</div>
+					</div>
+			{{ end }}
+		</section>
+	</div>
 </div>
 </div>
 
 <div class="footer-nav fixed" ontouchstart="">
 	<div class="footer-nav-inner">
 		<div class="footer-socials">
-			<!-- <a href="https://www.tunecore.co.jp/artist/#" target="_blank"><i class="fas fa-headphones"></i></a> -->
+			<a href="https://www.tunecore.co.jp/artist?id=408733" target="_blank"><i class="fas fa-headphones"></i></a>
 			<a href="https://twitter.com/WYFO_official" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-			<!-- <a href="#" target="_blank"><i class="fas fa-shopping-cart"></i></a> -->
+			<a href="{{ .Params.instaUrl }}" target="_blank"><i class="fab fa-instagram"></i></a>
 		</div>
 	</div>
 </div>

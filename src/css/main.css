@@ -58,6 +58,7 @@
 @import './imports/_position';
 @import './imports/_opacity';
 @import './imports/_spacing';
+@import './imports/_tab';
 @import './imports/_text-decoration';
 @import './imports/_text-align';
 @import './imports/_text-shadow';
@@ -71,7 +72,6 @@
 @import './imports/_states';
 @import './imports/_z-index';
 @import './imports/_amisamants';
-@import './imports/_wyfo';
 @import './imports/_kohei-miyazaki';
 @import './imports/_styles';
 @import './imports/_buttons';
@@ -83,6 +83,7 @@
 @import './imports/_colors';
 @import './imports/_media-queries';
 @import './imports/_variables';
+@import './imports/_wyfo';
 
 /* Debugging */
 @import './imports/_debug-children';
