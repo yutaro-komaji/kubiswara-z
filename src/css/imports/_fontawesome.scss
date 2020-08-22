@@ -1,17 +1,17 @@
 .footer-nav {
 	// position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    background: rgba(0,0,0, 0.9);
-    padding: 20px 0;
-    &-inner {
-	    padding: 5px;
-	    display: flex;
-	    justify-content: center;
-	    flex-wrap: wrap;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background: rgba(0,0,0, 0.9);
+	padding: 20px 0;
+	&-inner {
+		padding: 5px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 	a {
 		color: white;
@@ -19,59 +19,57 @@
 	}
 }
 .footer-socials {
-    display: inline-block;
-    padding: 0 0;
-    flex: 0 0 100%;
-    a {
-	    position: relative;
-	    display: inline-block;
-    	margin: 0 5px;
-	    width: 35px;
-	    height: 35px;
-	    padding: 0px;
-	    font-size: 10px;
-	    color: black;
-	    background-color: white;
-	    border-radius: 20px;
-	    border: 2px solid #fff;
-	    &:hover {
-		    color: white;
-		    background-color: black;
-		    transition: all 400ms 0s ease;
-	    }
-	    i {
-		    font-size: 18px;
-		    padding-left: 0px;
-		    padding-top: 6px;
+	display: inline-block;
+	padding: 0 0;
+	flex: 0 0 100%;
+	a {
+		position: relative;
+		display: inline-block;
+		margin: 0 5px;
+		width: 50px;
+		height: 50px;
+		border-radius: 30px;
+		padding: 0px;
+		font-size: 10px;
+		color: black;
+		background-color: white;
+		border: 2px solid #fff;
+		&:hover {
+			color: white;
+			background-color: black;
+			transition: all 400ms 0s ease;
+		}
+		i {
+			font-size: 18px;
+			padding-left: 0px;
+			padding-top: 13px;
 		}
 	}
 }
 .fab,
 .fas {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    text-rendering: auto;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	text-rendering: auto;
 }
 .fa-twitter:before {
-    content: "\f099";
+	content: "\f099";
 }
 .fa-shopping-cart:before {
-    content: "\f07a";
+	content: "\f07a";
 }
 .fa-headphones:before {
-    content: "\f025";
+	content: "\f025";
 }
 @media (--breakpoint-not-small) {
 	.footer-socials {
-	    padding: 0 120px;
+		padding: 0 120px;
 		a {
-		    margin: 0 10px;
-		    width: 38px;
-		    height: 38px;
-		    i {
-			    font-size: 18px;
-			    padding-left: 1px;
-			    padding-top: 8px;
+			margin: 0 10px;
+			i {
+				font-size: 18px;
+				padding-left: 1px;
+				// padding-top: 8px;
 			}
 		}
 	}

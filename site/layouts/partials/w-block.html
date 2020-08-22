@@ -1,15 +1,16 @@
-<section class="mb2 center pv2 Tabcondent" id="{{.secId}}">
+<section class="mb2 center pv2 Tabcondent {{ .tglActive }}" id="{{.secId}}">
   <div class="f4 b lh-title w-block-hdg">
-    <h2 class="tc pv3">{{.heading}}</h2>
+    <h2 class="hdg02 tc pv3">{{.heading}}</h2>
   </div>
   <div class="flex-m mhn3-m center pb4 w-block-inner ph4-ns">
     <div class="w-block-image center pb3 w-50-m">
       <img src="{{.imageUrl}}" alt="">
     </div>
     <div class="ph3 ph0-ns w-50-m">
-      <h3 class="f6 w-block-title tc pv3 pt0-m">{{.title}}</h3>
+      <h3 class="hdg03 f6 w-block-title tc pv3 pt0-m">{{.title}}</h3>
       <div class="tc">
         <p class="f7 center ph3-m">{{.text}}</p>
+        <p class="f7 center ph3-m">{{.text02}}</p>
         <a href="{{.btnUrl}}" class="btn raise" target="_blank">{{.btnText}}</a>
       </div>
     </div>

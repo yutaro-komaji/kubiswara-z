@@ -1,0 +1,115 @@
+{{ define "pageHead" }}
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="/rsc/js/slick/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="/rsc/js/slick/slick.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="/rsc/js/slick/slick.min.js"></script>
+<script type="text/javascript" src="/rsc/js/page/lmc.js"></script>
+{{ end }}
+{{ define "main" }}
+<div class="lmc">
+
+<section class="pv0 ph0 bg-center cover lmc-h1">
+	<ul class="slider">
+		<li><img src="/img/img-lmc-bio.jpg" alt="image01"></li>
+		<li><img src="/img/lmc/img-lmc-01.jpg" alt="image01"></li>
+		<li><img src="/img/lmc/img-lmc-02.jpg" alt="image02"></li>
+		<li><img src="/img/lmc/img-lmc-03.jpg" alt="image03"></li>
+		<li><img src="/img/lmc/img-lmc-04.jpg" alt="image02"></li>
+		<li><img src="/img/lmc/img-lmc-05.jpg" alt="image03"></li>
+		<li><img src="/img/lmc/img-lmc-06.jpg" alt="image02"></li>
+		<li><img src="/img/lmc/img-lmc-07.jpg" alt="image03"></li>
+		<li><img src="/img/lmc/img-lmc-08.jpg" alt="image03"></li>
+	</ul>
+	<h1>Light My Cigarette</h1>
+<!-- 	<div class="mw7 center ph3">
+		<div class="db mb3">
+			<div class="mw7 relative bg-fix-primary mb3">
+				<h1 class="f2 f1-l b di lh-title mb3 mw6">
+					Light My Cigarette
+				</h1>
+			</div>
+		</div>
+	</div> -->
+</section>
+
+<div class="mw7 center ph0">
+	<div class="anchor">
+		<ul class="b">
+			{{ range $index, $element := .Params.anchor }}
+				{{ partial "w-anchor" $element }}
+			{{ end }}
+		</ul>
+	</div>
+	<div class="anchor">
+		<ul class="b">
+			{{ range $index, $element := .Params.anchor02 }}
+				{{ partial "w-anchor" $element }}
+			{{ end }}
+		<div class="clear"></div>
+		</ul>
+	</div>
+	<div class="tabContainer w-block">
+		{{ range $index, $element := .Params.introduction }}
+				{{ partial "w-block" $element }}
+		{{ end }}
+
+		<section class="mb2 pv2 Tabcondent" id="movie">
+			<div class="f4 b lh-title w-block-hdg">
+				<h2 class="hdg02 tc pv3">MOVIE</h2>
+			</div>
+			<div class="flex-m mhn3-m center pb4 ph4-ns">
+			{{ range .Params.movie }}
+				<div class="center pb3">
+					<iframe width="280" height="157" src="https://www.youtube.com/embed/{{.iframeUrl}}?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<p class="f6 tc pv3 pt0-m">{{.title}}</p>
+				</div>
+			{{ end }}
+			</div>
+		</section>
+
+		<section class="mb2 pv2 Tabcondent" id="live">
+			<div class="f4 b lh-title w-block-hdg">
+				<h2 class="hdg02 tc pv3">LIVE</h2>
+			</div>
+			{{ range .Params.live }}
+					<div class="mb5 ph3 ph0-ns w-100-m">
+						<h3 class="f5 w-block-title tc pv3 pt0-m">{{.title}}</h3>
+						<div class="center ph6-ns">
+							<p class="f7 tc mb2 grey-2"><span class="f6 white">{{.dateText}}</span><br>{{.timeText}}</p>
+							<p class="f5 tc mb2 white"><a href="{{ .placeUrl }}" target="_blank">{{.placeText}}</a></p>
+							<p class="f7 tl tc-ns mb2 grey-2">Act : <span class="white">{{.actText}}</span></p>
+							<p class="f7 tl tc-ns ph6-m grey-2">Ticket : <span class="f6 white">{{.ticket}}</span></p>
+						</div>
+					</div>
+			{{ end }}
+		</section>
+		<section class="mb2 pv2 Tabcondent" id="music">
+			<div class="f4 b lh-title w-block-hdg">
+				<h2 class="hdg02 tc pv3">MUSIC</h2>
+			</div>
+			<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/792082708&color=%231f1d20&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+			<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+				<a href="https://soundcloud.com/gen-gen-790332340" title="Light My Cigarette" target="_blank" style="color: #cccccc; text-decoration: none;">Light My Cigarette</a>
+				<a href="https://soundcloud.com/gen-gen-790332340/fog" title="Fog" target="_blank" style="color: #cccccc; text-decoration: none;">Fog</a>
+			</div>
+			<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/792081409&color=%231f1d20&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+			<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+				<a href="https://soundcloud.com/gen-gen-790332340" title="Light My Cigarette" target="_blank" style="color: #cccccc; text-decoration: none;">Light My Cigarette</a>
+				<a href="https://soundcloud.com/gen-gen-790332340/photograph" title="Photograph" target="_blank" style="color: #cccccc; text-decoration: none;">Photograph</a>
+			</div>
+		</section>
+	</div>
+</div>
+
+
+<div class="footer-nav z-3" ontouchstart="">
+	<div class="footer-nav-inner">
+		<div class="footer-socials">
+			<a href="https://www.youtube.com/channel/UC8e-kYTK8L0ajRT5OvbiayA" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+			<a href="{{ .Params.releaseUrl }}" target="_blank"><i class="fas fa-headphones"></i></a>
+			<a href="{{ .Params.twitterUrl }}" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</div>
+{{ end }}

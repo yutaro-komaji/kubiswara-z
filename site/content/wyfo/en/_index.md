@@ -16,6 +16,7 @@ release:
       Available on streaming services
     iframeUrl: "Iu2cdhIEW2Y"
     secId: "release"
+    tglActive: active
 biography:
   - heading: "BIOGRAPHY"
     title: "While You Freak Out"

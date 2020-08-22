@@ -73,6 +73,8 @@
 @import './imports/_z-index';
 @import './imports/_amisamants';
 @import './imports/_kohei-miyazaki';
+@import './imports/_wyfo';
+@import './imports/_lmc';
 @import './imports/_styles';
 @import './imports/_buttons';
 @import './imports/_svg';
@@ -83,7 +85,6 @@
 @import './imports/_colors';
 @import './imports/_media-queries';
 @import './imports/_variables';
-@import './imports/_wyfo';
 
 /* Debugging */
 @import './imports/_debug-children';

@@ -16,6 +16,7 @@ release:
       스트리밍 서비스로 전달 중
     iframeUrl: "Iu2cdhIEW2Y"
     secId: "release"
+    tglActive: active
 biography:
   - heading: "경력"
     title: "While You Freak Out"

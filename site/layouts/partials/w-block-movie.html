@@ -1,10 +1,10 @@
-<section class="mb4 center pv2 Tabcondent active" id="{{.secId}}">
+<section class="mb4 center pv2 Tabcondent {{ .tglActive }}" id="{{.secId}}">
   <div class="f4 b lh-title w-block-hdg">
-    <h2 class="tc pv3">{{.heading}}</h2>
+    <h2 class="hdg02 tc pv3">{{.heading}}</h2>
   </div>
   <div class="flex-m mhn3-m center pb4 w-block-inner ph4-ns">
     <div class="w-block-movie center pb3">
-      <iframe width="280" height="157" src="https://www.youtube.com/embed/Iu2cdhIEW2Y?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="280" height="157" src="https://www.youtube.com/embed/{{.iframeUrl}}?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="ph3 ph0-ns w-50-m">
       <h3 class="f6 w-block-title tc pv3 pt0-m">{{.title}}</h3>

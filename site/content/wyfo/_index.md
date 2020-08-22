@@ -18,6 +18,7 @@ release:
       各種ストリーミングサービスで配信中!
     iframeUrl: "Iu2cdhIEW2Y"
     secId: "release"
+    tglActive: active
 biography:
   - heading: "BIOGRAPHY"
     title: "While You Freak Out"
