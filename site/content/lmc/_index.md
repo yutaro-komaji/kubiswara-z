@@ -37,14 +37,7 @@ movie:
     iframeUrl: "xb3MrID_9f8"
 
 live:
-  - title: "--"
-    dateText: 2020.9.4 (FRI)
-    timeText: OPEN 未定 / START 未定
-    placeText: "CLUB Zion"
-    placeUrl: "https://goo.gl/maps/jCSL9NYau9MJxjh36"
-    actText: Light My Cigarette / and more...
-    ticket: >
-      comming soon...
+  - title: comming soon...
 
 description: >
     2018年結成。名古屋発パンクコアバンド。GENKI(Gt./ Vo.) , TumTum(Ba./ Scream) , AKAIKE(Dr./ Cho.)からなる3ピースバンド。
