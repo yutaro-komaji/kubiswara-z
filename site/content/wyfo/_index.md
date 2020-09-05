@@ -29,14 +29,6 @@ biography:
     imageUrl: "/img/img-wyfo-bio.jpg"
     secId: "biography"
 live:
-  - title: "OWN vol.1"
-    dateText: 2020.8.29(SAT)
-    timeText: OPEN 18:30 / START 19:00
-    placeText: "豊橋 club KNOT"
-    placeUrl: "https://goo.gl/maps/vacs7Zbmi2fsBgEbA"
-    actText: Nostal Phraysic / While You Freak Out / 聲 / + 1 artist
-    ticket: >
-      Adv: ￥2,100 (+1D) / Door: ￥2,600 (+1D) / 配信: ￥1,800
   - title: "TIGHT ROPE 19th anniversary 【SOLD OUT vol.--】"
     dateText: 2020.9.21(MON)
     timeText: OPEN 未定 / START 未定
