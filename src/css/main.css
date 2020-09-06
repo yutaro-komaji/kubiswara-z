@@ -67,6 +67,7 @@
 @import './imports/_typography';
 @import './imports/_utilities';
 @import './imports/_visibility';
+@import './imports/_modal';
 @import './imports/_white-space';
 @import './imports/_vertical-align';
 @import './imports/_states';
