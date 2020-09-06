@@ -1,8 +1,8 @@
-$(function(){
-	$(window).scroll(function() {
-		$('.footer-nav').addClass("fixed");
-	});
-});
+// $(function(){
+// 	$(window).scroll(function() {
+// 		$('.footer-nav').addClass("fixed");
+// 	});
+// });
 $(function(){
 	$('.slider').slick({
 	    autoplay:true,

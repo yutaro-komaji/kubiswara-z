@@ -1,4 +1,4 @@
-.am h1,
+head.am h1,
 .am h2,
 .am h3,
 .am h4,
@@ -166,7 +166,7 @@ footer .footer-contents {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 45%;
+	top: 50%;
 	left: 4%;
 	width: 100%;
 	max-width: 170px;
@@ -297,7 +297,7 @@ footer .footer-contents {
 	margin: 0 auto;
 	opacity: 1;
     box-shadow: 5px 5px 10px #000;
-} 
+}
 .am .btn-plane.btn-03 .btn-inner {
 	/*line-height: 1.4;
 	font-size: 95%;*/
@@ -364,7 +364,7 @@ footer .footer-contents {
 @media screen and (min-width:769px){
 	.hdg-lv1 {
 		font-size: 50px;
-	}   
+	}
 	.hdg-lv2 {
 		font-size: 30px;
 	}
@@ -401,7 +401,7 @@ footer .footer-contents {
 		height: 250px;
 	}
 	.am .hdg-lv1 {
-		font-size: 20px;		
+		font-size: 20px;
 	}
 	.am .hdg-lv1 .cursive {
 		letter-spacing: 1px;
@@ -416,4 +416,67 @@ footer .footer-contents {
 	.am .content-wrp-01 {
 		max-width: 1024px;
 	}
+}
+body,html {
+    height: 100%;
+    background-color: #555;
+}
+
+.parallax01 {
+    position: relative;
+    background-image: url('/img/amis-mv.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.parallax02 {
+    position: relative;
+    background-image: url('/img/amis-mv.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.parallax01 h2 {
+    color:#fff;
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    width :100%;
+    bottom: 50%;
+}
+
+.parallax02 h2 {
+	position: fixed;
+}
+
+
+.contents {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height:100%;
+    font-size:60px;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    /*opacity: 0.5;*/
+    /*padding: 100px 20px;*/
+    text-align :center;
+    }
+
+.contents h2 {
+	padding-top: 30px;
+	width: 100%;
+	font-size: 2rem;
+}
+
+
+.contents02 {
+	background: rgba(0,0,0,0.9);
 }
