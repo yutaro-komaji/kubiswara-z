@@ -27,10 +27,12 @@ $(function(){
 //   });
 // });
 $(function () {
-  $(document).ready(function(){
-      $('#modalArea').fadeIn();
-  });
-  $('#closeModal , #modalBg').click(function(){
-    $('#modalArea').fadeOut();
-  });
+	$(document).ready(function(){
+		$('#modalArea').fadeIn();
+		$('body').addClass('overflow-hidden');
+	});
+	$('#closeModal , #modalBg').click(function(){
+		$('#modalArea').fadeOut();
+		$('body').removeClass('overflow-hidden');
+	});
 });
