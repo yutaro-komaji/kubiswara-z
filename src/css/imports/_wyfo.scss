@@ -21,6 +21,9 @@
 		background-color: #111;
 		&-inner {
 			align-items: center;
+			&:not(:last-child)  {
+				border-bottom: solid 2px #b22222;
+			}
 		}
 		&-hdg {
 			margin: 0 auto;

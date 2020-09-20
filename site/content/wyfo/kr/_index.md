@@ -3,22 +3,27 @@ title: "While You Freak Out"
 image: /img/img-hdg-wyfo.jpg
 anchor:
     - anchorItem: "release"
-      anchorItemtxt: 전달
+      anchorItemtxt: RELEASE
     - anchorItem: "biography"
-      anchorItemtxt: 경력
+      anchorItemtxt: BIOGRAPHY
 pageUrl: /wyfo/
 release:
-  - heading: "전달"
-    title: "I Don't Wanna Close My Eyes"
+  - title: "Inside of Me"
+    btnText: "LISTEN"
+    btnUrl: "https://linkco.re/307GtgGT"
+    text02: >
+      스트리밍 서비스로 전달 중
+    imageUrl: "/img/wyfo/img-inside-of-me.jpg"
+  - title: "I Don't Wanna Close My Eyes"
     btnText: "LISTEN"
     btnUrl: "https://linkco.re/eFbPf7Nq"
     text: >
       스트리밍 서비스로 전달 중
-    iframeUrl: "Iu2cdhIEW2Y"
+    imageUrl: "/img/wyfo/img-idwcme.jpg"
     secId: "release"
     tglActive: active
 biography:
-  - heading: "경력"
+  - heading: "BIOGRAPHY"
     title: "While You Freak Out"
     btnText: "Instagram"
     btnUrl: "https://www.instagram.com/wyfo_korea_official/"

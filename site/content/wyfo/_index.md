@@ -10,35 +10,42 @@ anchor:
       anchorItemtxt: LIVE
 pageUrl: /wyfo/
 release:
-  - heading: "RELEASE"
-    title: "I Don't Wanna Close My Eyes"
+  - heading: "kkkk"
+    title: "Inside of Me"
+    btnText: "LISTEN"
+    btnUrl: "https://linkco.re/307GtgGT"
+    text02: >
+      理性と感情の矛盾を表現した歌詞。重く激しいオルタナティブなロックサウンド。
+    text03: >
+      ジャケットを飾るのは、山火事によって発芽・生長すると云われるオーストラリア原産の希少植物「クサントロエア」。
+    imageUrl: "/img/wyfo/img-inside-of-me.jpg"
+  - title: "I Don't Wanna Close My Eyes"
     btnText: "LISTEN"
     btnUrl: "https://linkco.re/eFbPf7Nq"
     text: >
-      各種ストリーミングサービスで配信中!
-    iframeUrl: "Iu2cdhIEW2Y"
-    secId: "release"
-    tglActive: active
+      各種ストリーミングにて配信中
+    imageUrl: "/img/wyfo/img-idwcme.jpg"
 biography:
   - heading: "BIOGRAPHY"
     title: "While You Freak Out"
     btnText: "Twitter"
     btnUrl: "https://twitter.com/WYFO_official"
     text: >
-      2017年結成。平均年齢21歳。愛知県を拠点とし、2020年6月より2人体制での活動となる。Hard Rock、UK Rock、Hip Hopなどの様々な音楽に影響を受け、ジャンルを超えた楽曲で音楽シーンを盛り上げる。
+      2017年結成。平均年齢22歳。愛知県を拠点とし、2020年6月より2人体制での活動となる。Hard Rock、UK Rock、Hip Hopなどの様々な音楽に影響を受け、ジャンルを超えた楽曲で音楽シーンを盛り上げる。
     imageUrl: "/img/img-wyfo-bio.jpg"
     secId: "biography"
 live:
-  - title: "TIGHT ROPE 19th anniversary 【SOLD OUT vol.--】"
+  - title: "TIGHT ROPE 19th anniversary 【SOLD OUT vol.20】"
+    liveImg: "/img/wyfo/img-wyfo-live01.jpg"
     dateText: 2020.9.21(MON)
-    timeText: OPEN 未定 / START 未定
+    timeText: OPEN  15:30 / START 16:00
     placeText: "栄 TIGHT ROPE"
     placeUrl: "https://goo.gl/maps/6KZx2DmREetGHYUy6"
-    actText: THE KOOL OPERATORS / While You Freak Out / and more...
+    actText: ALGOS. / sickout / While You Freak Out / wet bream / 曇り、後、ゆうくれ / ハガクレ / かふ
     ticket: >
       Adv: ￥2,000 / Door: ￥2,500
 description:
-    2017年結成。平均年齢21歳。愛知県を拠点とし、2020年6月より2人体制での活動となる。Hard Rock、UK Rock、Hip Hopなどの様々な音楽に影響を受け、ジャンルを超えた楽曲で音楽シーンを盛り上げる。
+    2017年結成。平均年齢22歳。愛知県を拠点とし、2020年6月より2人体制での活動となる。Hard Rock、UK Rock、Hip Hopなどの様々な音楽に影響を受け、ジャンルを超えた楽曲で音楽シーンを盛り上げる。
 pagelist:
   - listItem: "/wyfo/"
     listItemtxt: JP

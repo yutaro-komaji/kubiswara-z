@@ -8,15 +8,18 @@ anchor:
       anchorItemtxt: BIOGRAPHY
 pageUrl: /wyfo/
 release:
-  - heading: "RELEASE"
-    title: "I Don't Wanna Close My Eyes"
+  - title: "Inside of Me"
+    btnText: "LISTEN"
+    btnUrl: "https://linkco.re/307GtgGT"
+    text02: >
+      Available on streaming services
+    imageUrl: "/img/wyfo/img-inside-of-me.jpg"
+  - title: "I Don't Wanna Close My Eyes"
     btnText: "LISTEN"
     btnUrl: "https://linkco.re/eFbPf7Nq"
     text: >
       Available on streaming services
-    iframeUrl: "Iu2cdhIEW2Y"
-    secId: "release"
-    tglActive: active
+    imageUrl: "/img/wyfo/img-idwcme.jpg"
 biography:
   - heading: "BIOGRAPHY"
     title: "While You Freak Out"
