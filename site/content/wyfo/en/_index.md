@@ -12,7 +12,7 @@ release:
     btnText: "LISTEN"
     btnUrl: "https://linkco.re/307GtgGT"
     text02: >
-      Available on streaming services
+      The lyrics express contradiction between reason and feeling. Alternative Rock sounds which are heavy and aggressive. Xanthorrhoea is a rare planet that came from Australian origin to decorate the cover.
     imageUrl: "/img/wyfo/img-inside-of-me.jpg"
   - title: "I Don't Wanna Close My Eyes"
     btnText: "LISTEN"
