@@ -6,13 +6,17 @@ anchor:
       anchorItemtxt: RELEASE
     - anchorItem: "biography"
       anchorItemtxt: BIOGRAPHY
+    - anchorItem: "movie"
+      anchorItemtxt: MOVIE
 pageUrl: /wyfo/
 release:
   - title: "Inside of Me"
     btnText: "LISTEN"
     btnUrl: "https://linkco.re/307GtgGT"
     text02: >
-      The lyrics express contradiction between reason and feeling. Alternative Rock sounds which are heavy and aggressive. Xanthorrhoea is a rare planet that came from Australian origin to decorate the cover.
+      The lyrics express contradiction between reason and feeling.
+    text03: >
+      Alternative Rock sounds which are heavy and aggressive. Xanthorrhoea is a rare plant that came from Australian origin to decorate the cover.
     imageUrl: "/img/wyfo/img-inside-of-me.jpg"
   - title: "I Don't Wanna Close My Eyes"
     btnText: "LISTEN"
@@ -20,6 +24,15 @@ release:
     text: >
       Available on streaming services
     imageUrl: "/img/wyfo/img-idwcme.jpg"
+movie:
+  - heading: "MOVIE"
+    title: "Inside of Me (Lyric video)"
+    btnText: "YouTube Channel"
+    btnUrl: "https://www.youtube.com/channel/UCiu322VuBwqD1_bX-y4-AjQ"
+    text: >
+      The lyrics express contradiction between reason and feeling.
+    iframeUrl: "lnc-SX_MM2Y"
+    secId: "movie"
 biography:
   - heading: "BIOGRAPHY"
     title: "While You Freak Out"

@@ -94,6 +94,10 @@ $(function(){
 				{{ partial "w-block" $element }}
 		{{ end }}
 
+		{{ range $index, $element := .Params.movie }}
+				{{ partial "w-block-movie" $element }}
+		{{ end }}
+
 		<section class="mb2 pv2 Tabcondent" id="live">
 			<div class="f4 b lh-title w-block-hdg">
 				<h2 class="tc pv3">LIVE</h2>

@@ -6,12 +6,11 @@ anchor:
       anchorItemtxt: RELEASE
     - anchorItem: "biography"
       anchorItemtxt: BIOGRAPHY
-    - anchorItem: "live"
-      anchorItemtxt: LIVE
+    - anchorItem: "movie"
+      anchorItemtxt: MOVIE
 pageUrl: /wyfo/
 release:
-  - heading: "kkkk"
-    title: "Inside of Me"
+  - title: "Inside of Me"
     btnText: "LISTEN"
     btnUrl: "https://linkco.re/307GtgGT"
     text02: >
@@ -25,6 +24,15 @@ release:
     text: >
       各種ストリーミングにて配信中
     imageUrl: "/img/wyfo/img-idwcme.jpg"
+movie:
+  - heading: "MOVIE"
+    title: "Inside of Me (Lyric video)"
+    btnText: "YouTube Channel"
+    btnUrl: "https://www.youtube.com/channel/UCiu322VuBwqD1_bX-y4-AjQ"
+    text: >
+      1st. 配信Single "Inside of Me" の Lyric Video、ついに解禁。
+    iframeUrl: "lnc-SX_MM2Y"
+    secId: "movie"
 biography:
   - heading: "BIOGRAPHY"
     title: "While You Freak Out"

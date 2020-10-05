@@ -6,13 +6,17 @@ anchor:
       anchorItemtxt: RELEASE
     - anchorItem: "biography"
       anchorItemtxt: BIOGRAPHY
+    - anchorItem: "movie"
+      anchorItemtxt: MOVIE
 pageUrl: /wyfo/
 release:
   - title: "Inside of Me"
     btnText: "LISTEN"
     btnUrl: "https://linkco.re/307GtgGT"
     text02: >
-      스트리밍 서비스로 전달 중
+      이 가사는 이성과 감정사이의 모순을 표현했다.
+    text03: >
+      Alternative Rock(올터너티브락) 사운드는 무겁고 공격적이다.앨범커버에는 호주에서 처음 발견되고 희귀한 식물인 Xanthorrhoea(크산토로이아속)을 사용했다.
     imageUrl: "/img/wyfo/img-inside-of-me.jpg"
   - title: "I Don't Wanna Close My Eyes"
     btnText: "LISTEN"
@@ -22,6 +26,15 @@ release:
     imageUrl: "/img/wyfo/img-idwcme.jpg"
     secId: "release"
     tglActive: active
+movie:
+  - heading: "MOVIE"
+    title: "Inside of Me (Lyric video)"
+    btnText: "YouTube Channel"
+    btnUrl: "https://www.youtube.com/channel/UCiu322VuBwqD1_bX-y4-AjQ"
+    text: >
+      이 가사는 이성과 감정사이의 모순을 표현했다.
+    iframeUrl: "lnc-SX_MM2Y"
+    secId: "movie"
 biography:
   - heading: "BIOGRAPHY"
     title: "While You Freak Out"
