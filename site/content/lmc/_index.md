@@ -37,7 +37,15 @@ movie:
     iframeUrl: "xb3MrID_9f8"
 
 live:
-  - title: comming soon...
+  - title: 'Club Zion presents "Who Cares? Vol.8"'
+    liveImg: "/img/lmc/img-lmc_live-201107.jpg"
+    dateText: 2020.11.07(SAT)
+    timeText: OPEN  18:00 / START 18:30
+    placeText: "上前津Club Zion"
+    placeUrl: "https://goo.gl/maps/g1UuNK5FQXrAyy9SA"
+    actText: pressure / The Deltafish / Light My Cigarette / GOODEATH
+    ticket: >
+      Adv:￥2,000 / Door:￥2,500 (+1D)
 
 description: >
     2018年結成。名古屋発パンクコアバンド。GENKI(Gt./ Vo.) , TumTum(Ba./ Scream) , AKAIKE(Dr./ Cho.)からなる3ピースバンド。
