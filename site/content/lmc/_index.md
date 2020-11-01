@@ -1,10 +1,10 @@
 ---
 title: "Light My Cigarette"
 anchor:
-    - anchorItem: "introduction"
-      anchorItemtxt: INTRODUCTION
     - anchorItem: "live"
       anchorItemtxt: LIVE
+    - anchorItem: "introduction"
+      anchorItemtxt: INTRODUCTION
 anchor02:
     - anchorItem: "music"
       anchorItemtxt: MUSIC
@@ -28,7 +28,6 @@ introduction:
         彼らが織りなす、陰と陽の二面性を体現するような幅広いサウンドは、音楽的バックグラウンドの広さが伺える。
     imageUrl: "/img/lmc/img-lmc-08.jpg"
     secId: "introduction"
-    tglActive: active
 
 movie:
   - title: "Introspection"
@@ -46,6 +45,15 @@ live:
     actText: pressure / The Deltafish / Light My Cigarette / GOODEATH
     ticket: >
       Adv:￥2,000 / Door:￥2,500 (+1D)
+  - title: 'Never Ever Forget Promise Vol,1'
+    liveImg: "/img/lmc/img-lmc_live-201129.jpg"
+    dateText: 2020.11.29(SUN)
+    timeText: OPEN  18:30 / START 19:00
+    placeText: "鶴舞DAYTRIP"
+    placeUrl: "https://goo.gl/maps/nV6RtME7TppDEGfY9"
+    actText: Never ever call / Knuckle up / Light My Cigarette / and more...
+    ticket: >
+      ￥2,500 (Free Drink)
 
 description: >
     2018年結成。名古屋発パンクコアバンド。GENKI(Gt./ Vo.) , TumTum(Ba./ Scream) , AKAIKE(Dr./ Cho.)からなる3ピースバンド。
