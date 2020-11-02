@@ -27,14 +27,14 @@ release:
     secId: "release"
     tglActive: active
 movie:
-  - heading: "MOVIE"
-    title: "Inside of Me (Lyric video)"
-    btnText: "YouTube Channel"
-    btnUrl: "https://www.youtube.com/channel/UCiu322VuBwqD1_bX-y4-AjQ"
+  - title: "Getting Higher (Demo Visualiser)"
+    text: >
+      2nd. Demo.
+    iframeUrl: "qKuM0pxeX5E"
+  - title: "Inside of Me (Lyric video)"
     text: >
       이 가사는 이성과 감정사이의 모순을 표현했다.
     iframeUrl: "lnc-SX_MM2Y"
-    secId: "movie"
 biography:
   - heading: "BIOGRAPHY"
     title: "While You Freak Out"

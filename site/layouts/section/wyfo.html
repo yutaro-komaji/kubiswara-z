@@ -94,9 +94,26 @@ $(function(){
 				{{ partial "w-block" $element }}
 		{{ end }}
 
-		{{ range $index, $element := .Params.movie }}
-				{{ partial "w-block-movie" $element }}
-		{{ end }}
+		<section class="mb4 center pv2 Tabcondent" id="movie">
+			<div class="f4 b lh-title w-block-hdg">
+				<h2 class="hdg02 tc pv3">MOVIE</h2>
+			</div>
+			{{ range .Params.movie }}
+			<!-- <div class="flex-m mhn3-m center pb4 w-block-inner ph4-ns"> -->
+
+			<div class="flex-m mhn3-m mb4 pb4 w-block-inner mh3">
+				<div class="w-block-movie center pb3">
+					<iframe width="280" height="157" src="https://www.youtube.com/embed/{{.iframeUrl}}?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="ph3 ph0-ns w-50-m">
+					<h3 class="f6 w-block-title tc pv3 pt0-m">{{.title}}</h3>
+					<div class="tc">
+						<p class="f7 center">{{.text}}</p>
+					</div>
+				</div>
+			</div>
+			{{ end }}
+		</section>
 
 		<section class="mb2 pv2 Tabcondent" id="live">
 			<div class="f4 b lh-title w-block-hdg">

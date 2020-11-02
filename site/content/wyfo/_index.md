@@ -25,14 +25,14 @@ release:
       各種ストリーミングにて配信中
     imageUrl: "/img/wyfo/img-idwcme.jpg"
 movie:
-  - heading: "MOVIE"
-    title: "Inside of Me (Lyric video)"
-    btnText: "YouTube Channel"
-    btnUrl: "https://www.youtube.com/channel/UCiu322VuBwqD1_bX-y4-AjQ"
+  - title: "Getting Higher (Demo Visualiser)"
+    text: >
+      2nd. Demo "Getting Higher" の Demo Visualiser
+    iframeUrl: "qKuM0pxeX5E"
+  - title: "Inside of Me (Lyric video)"
     text: >
       1st. 配信Single "Inside of Me" の Lyric Video、ついに解禁。
     iframeUrl: "lnc-SX_MM2Y"
-    secId: "movie"
 biography:
   - heading: "BIOGRAPHY"
     title: "While You Freak Out"
