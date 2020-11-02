@@ -27,7 +27,7 @@ release:
 movie:
   - title: "Getting Higher (Demo Visualiser)"
     text: >
-      2nd. Demo "Getting Higher" の Demo Visualiser
+      2nd. Demo "Getting Higher" の Visualiser。
     iframeUrl: "qKuM0pxeX5E"
   - title: "Inside of Me (Lyric video)"
     text: >
