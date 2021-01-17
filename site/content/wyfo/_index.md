@@ -10,6 +10,12 @@ anchor:
       anchorItemtxt: MOVIE
 pageUrl: /wyfo/
 release:
+  - title: "Black or White"
+    btnText: "LISTEN"
+    btnUrl: "https://linkco.re/6y9VXVAF"
+    text: >
+      各種ストリーミングにて配信中
+    imageUrl: "/img/wyfo/img-bow.jpg"
   - title: "Inside of Me"
     btnText: "LISTEN"
     btnUrl: "https://linkco.re/307GtgGT"
