@@ -10,6 +10,12 @@ anchor:
       anchorItemtxt: MOVIE
 pageUrl: /wyfo/
 release:
+  - title: "Black or White"
+    btnText: "LISTEN"
+    btnUrl: "https://linkco.re/6y9VXVAF"
+    text: >
+      Available on streaming services
+    imageUrl: "/img/wyfo/img-bow.jpg"
   - title: "Inside of Me"
     btnText: "LISTEN"
     btnUrl: "https://linkco.re/307GtgGT"
@@ -25,6 +31,10 @@ release:
       Available on streaming services
     imageUrl: "/img/wyfo/img-idwcme.jpg"
 movie:
+  - title: "Black or White"
+    text: >
+      2nd. Single.
+    iframeUrl: "4uyz1cSR9uY"
   - title: "Getting Higher (Demo Visualiser)"
     text: >
       2nd. Demo.

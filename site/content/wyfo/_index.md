@@ -8,6 +8,8 @@ anchor:
       anchorItemtxt: BIOGRAPHY
     - anchorItem: "movie"
       anchorItemtxt: MOVIE
+    - anchorItem: "live"
+      anchorItemtxt: LIVE
 pageUrl: /wyfo/
 release:
   - title: "Black or White"
@@ -31,6 +33,10 @@ release:
       各種ストリーミングにて配信中
     imageUrl: "/img/wyfo/img-idwcme.jpg"
 movie:
+  - title: "Black or White"
+    text: >
+      2nd. Single "Black or White" の MVが完成。 最高クオリティの音と映像をぜひご覧あれ。
+    iframeUrl: "4uyz1cSR9uY"
   - title: "Getting Higher (Demo Visualiser)"
     text: >
       2nd. Demo "Getting Higher" の Visualiser。
@@ -49,15 +55,15 @@ biography:
     imageUrl: "/img/img-wyfo-bio.jpg"
     secId: "biography"
 live:
-  - title: "TIGHT ROPE 19th anniversary 【SOLD OUT vol.20】"
-    liveImg: "/img/wyfo/img-wyfo-live01.jpg"
-    dateText: 2020.9.21(MON)
-    timeText: OPEN  15:30 / START 16:00
-    placeText: "栄 TIGHT ROPE"
-    placeUrl: "https://goo.gl/maps/6KZx2DmREetGHYUy6"
-    actText: ALGOS. / sickout / While You Freak Out / wet bream / 曇り、後、ゆうくれ / ハガクレ / かふ
+  - title: "BOUNCE vol.117"
+    liveImg: ""
+    dateText: 2021.2.20(SAT)
+    timeText: OPEN  18:00 / START 18:30
+    placeText: "club KNOT"
+    placeUrl: "https://club-knot.com/"
+    actText: Blue Light Call / While You Freak Out / NOZU / Lost in Seiren / シヴァネコ
     ticket: >
-      Adv: ￥2,000 / Door: ￥2,500
+      Adv: ￥2,500 (+1D) / Door: ￥3,000 (+1D) / Streaming: ￥2,000
 description:
     2017年結成。平均年齢22歳。愛知県を拠点とし、2020年6月より2人体制での活動となる。Hard Rock、UK Rock、Hip Hopなどの様々な音楽に影響を受け、ジャンルを超えた楽曲で音楽シーンを盛り上げる。
 pagelist:
