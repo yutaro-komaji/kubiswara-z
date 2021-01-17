@@ -60,7 +60,7 @@ live:
     dateText: 2021.2.20(SAT)
     timeText: OPEN  18:00 / START 18:30
     placeText: "club KNOT"
-    placeUrl: "https://club-knot.com/"
+    placeUrl: "https://club-knot.com/live_schedule/bounce-vol-117"
     actText: Blue Light Call / While You Freak Out / NOZU / Lost in Seiren / シヴァネコ
     ticket: >
       Adv: ￥2,500 (+1D) / Door: ￥3,000 (+1D) / Streaming: ￥2,000
