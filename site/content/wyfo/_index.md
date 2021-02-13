@@ -55,6 +55,15 @@ biography:
     imageUrl: "/img/img-wyfo-bio.jpg"
     secId: "biography"
 live:
+  - title: "Who Cares? Vol.9"
+    liveImg: ""
+    dateText: 2021.2.14(SUN)
+    timeText: OPEN  16:00 / START 16:30
+    placeText: "上前津Club Zion"
+    placeUrl: "https://goo.gl/maps/g1UuNK5FQXrAyy9SA"
+    actText: SHIZUKU / The sailing / While You Freak Out / 日日是好日 / 爆音小僧八代目唯翔(US7)
+    ticket: >
+      Adv: ￥2,000 (+1D) / Door: ￥2,500 (+1D)
   - title: "BOUNCE vol.117"
     liveImg: ""
     dateText: 2021.2.20(SAT)
