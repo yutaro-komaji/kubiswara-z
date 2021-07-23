@@ -49,7 +49,7 @@ live:
 description: >
     2018年結成。名古屋発パンクコアバンド。GENKI(Gt./ Vo.) , TumTum(Ba./ Scream) , AKAIKE(Dr./ Cho.)からなる3ピースバンド。
 
-releaseUrl: https://eggs.mu/artist/LMC_Nagoya/
+releaseUrl: https://linkco.re/MstRyvYS
 twitterUrl: https://twitter.com/LMC_Nagoya
 
 ---
