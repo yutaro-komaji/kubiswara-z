@@ -55,24 +55,15 @@ biography:
     imageUrl: "/img/img-wyfo-bio.jpg"
     secId: "biography"
 live:
-  - title: "Who Cares? Vol.9"
-    liveImg: ""
-    dateText: 2021.2.14(SUN)
-    timeText: OPEN  16:00 / START 16:30
-    placeText: "上前津Club Zion"
-    placeUrl: "https://goo.gl/maps/g1UuNK5FQXrAyy9SA"
-    actText: SHIZUKU / The sailing / While You Freak Out / 日日是好日 / 爆音小僧八代目唯翔(US7)
+  - title: "LANDSCAPE WITH VOICE Vol.1"
+    liveImg: "/img/wyfo/img-wyfo-live01.jpg"
+    dateText: 2021.8.7(SAT.)
+    timeText: START 16:00
+    placeText: "津島GRANT'S"
+    placeUrl: "#"
+    actText: While You Freak Out / Naykid / sasanqua.Shun / No Grum epic
     ticket: >
-      Adv: ￥2,000 (+1D) / Door: ￥2,500 (+1D)
-  - title: "BOUNCE vol.117"
-    liveImg: ""
-    dateText: 2021.2.20(SAT)
-    timeText: OPEN  18:00 / START 18:30
-    placeText: "club KNOT"
-    placeUrl: "https://club-knot.com/live_schedule/bounce-vol-117"
-    actText: Blue Light Call / While You Freak Out / NOZU / Lost in Seiren / シヴァネコ
-    ticket: >
-      Adv: ￥2,500 (+1D) / Door: ￥3,000 (+1D) / Streaming: ￥2,000
+      Free
 description:
     2017年結成。平均年齢22歳。愛知県を拠点とし、2020年6月より2人体制での活動となる。Hard Rock、UK Rock、Hip Hopなどの様々な音楽に影響を受け、ジャンルを超えた楽曲で音楽シーンを盛り上げる。
 pagelist:
@@ -84,7 +75,3 @@ pagelist:
     listItemtxt: KR
 instaUrl: https://www.instagram.com/wyfo_japan_official/
 ---
-
-
-
-
