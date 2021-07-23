@@ -36,24 +36,15 @@ movie:
     iframeUrl: "xb3MrID_9f8"
 
 live:
-  - title: 'Club Zion presents "Who Cares? Vol.8"'
-    liveImg: "/img/lmc/img-lmc_live-201107.jpg"
-    dateText: 2020.11.07(SAT)
-    timeText: OPEN  18:00 / START 18:30
-    placeText: "上前津Club Zion"
-    placeUrl: "https://goo.gl/maps/g1UuNK5FQXrAyy9SA"
-    actText: pressure / The Deltafish / Light My Cigarette / GOODEATH
+  - title: 'THE NEXT'
+    liveImg: ""
+    dateText: 2021.07.30(FRI.)
+    timeText: OPEN  17:00 / START 17:30
+    placeText: "栄 RAD SE7EN"
+    placeUrl: "https://goo.gl/maps/h5uZcuHD1epUhJo88"
+    actText: ヤタセノビ / Never Ever Call / Light My Cigarette
     ticket: >
-      Adv:￥2,000 / Door:￥2,500 (+1D)
-  - title: 'Never Ever Forget Promise Vol,1'
-    liveImg: "/img/lmc/img-lmc_live-201129.jpg"
-    dateText: 2020.11.29(SUN)
-    timeText: OPEN  18:30 / START 19:00
-    placeText: "鶴舞DAYTRIP"
-    placeUrl: "https://goo.gl/maps/nV6RtME7TppDEGfY9"
-    actText: Never ever call / Knuckle up / Light My Cigarette / and more...
-    ticket: >
-      ￥2,500 (Free Drink)
+      Adv:￥2,000 / Door:￥2,500
 
 description: >
     2018年結成。名古屋発パンクコアバンド。GENKI(Gt./ Vo.) , TumTum(Ba./ Scream) , AKAIKE(Dr./ Cho.)からなる3ピースバンド。
