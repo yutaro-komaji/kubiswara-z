@@ -1,0 +1,796 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0;}
+
+* html .clearfix {height: 1%;}
+
+.clearfix {display:block; clear: both;}
+
+.body_reset{margin:0 auto; padding:0 auto;}
+
+
+/* IE 6 では最大幅がサポートされていないため、デフォルトで幅 100% に設定される */
+.ie6 img {
+	width:100%;
+}
+
+/*font
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,900&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:500,900&display=swap&subset=japanese');
+*/
+
+/*画像*/
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+a img:hover{
+	opacity: 0.8;
+}
+/*リンク*/
+a, a:visited {
+	color: #003300;
+	text-decoration: underline;
+}
+a:active, a:hover {
+	color: #003300;
+	text-decoration: none;
+}
+a:focus, input:focus {
+	outline: none;
+}
+
+/*float*/
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+/*テキスト*/
+em, .em{
+	color:#f10000;
+	font-style: normal;
+}
+.align-center{
+	text-align:center;
+	margin: 0 auto;
+}
+.align-left{
+	text-align:left;
+}
+.align-right{
+	text-align:right;
+}
+.bold{
+	font-weight: 700;
+}
+.underline{
+	text-decoration: underline;
+}
+.note{
+	font-size: 85%;
+	letter-spacing: normal;
+}
+.fontL{
+	font-size: 125%;
+}
+
+/*見出し*/
+h2 {
+	font-size: 140%;
+	line-height: 1.4em;
+}
+h3 {
+	font-size: 140%;
+	line-height: 1.5em;
+}
+h4 {
+	font-size: 115%;
+	line-height: 1.5em;
+}
+font{
+	color:#0099ee;
+}
+
+/*マーカー*/
+.marker-red{
+	background: linear-gradient(transparent 70%, #d0121b 70%);
+}
+.marker{
+	background: linear-gradient(transparent 70%, #ffee00 70%);
+}
+
+/* 非表示 */
+.hidden {
+	visibility:hidden;
+	font-size:0;
+}
+
+/* 解除 */
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility:hidden;
+	font-size: 0;
+}
+.clear{
+	clear: both;
+}
+
+/*▲ページトップへ*/
+.pagetop {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+
+}
+.pagetop a {
+	width: 25px;
+	height: 25px;
+	display: block;
+	background-color: #ab7c36;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+	padding: 10px;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	border-radius: 45px;
+	/*	border: 3px #FFF solid;*/
+	position:relative;
+}
+.pagetop p {
+	font-size: 100%;
+	line-height: 0;
+	position:absolute;
+	top: 48%;
+	left: 49%;
+	transform: translate(-48%, -49%);
+	-webkit-transform: translate(-48%, -49%);
+	-ms-transform: translate(-48%, -49%);
+}
+.pagetop p img {
+	width: 50px;
+	height: auto;
+}
+
+/* モバイルレイアウト : 480 px およびそれ以下. */
+.pc {display: none;}
+.sp {display: inline-block;}
+
+
+body {
+	font-family: 'Noto Sans JP', sans-serif, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ";
+	margin: 0px auto;
+	padding: 0;
+	vertical-align: middle;
+	background-color: #FFF;
+	word-wrap: break-word;
+	text-align: center;
+	line-height: 1.7;
+	color: #0a140a;
+	font-size: 90%;
+	-webkit-text-size-adjust: 90%;
+	-moz-text-size-adjust: 90%;
+	-ms-text-size-adjust: 90%;
+	-o-text-size-adjust: 90%;
+	text-size-adjust: 90%;
+	overflow-x: hidden;
+}
+
+section{
+	text-align: left;
+	margin: 0px auto;
+	padding: 0;
+}
+
+/*背景が黒の場合*/
+.bg_black {
+	background-color: rgba(0,0,0,0.6);
+	border-top: 10px solid #145014;
+}
+/*背景が白の場合*/
+.bg_white {
+	background-color: rgba(255,255,255,0.6);
+	border-top: 10px solid #145014;
+}
+
+.container{
+/*	max-width: 1100px;*/
+	margin: 0 auto;
+	padding: 0 2% 2em 2%;
+}
+
+.wrapper section:last-child{
+	padding-bottom: 5%;
+}
+
+
+/*===== タイトル =====*/
+h2 {
+	margin-left: -1.3%;
+	position: relative;
+	z-index: 0;
+}
+h2 img {
+	max-height: 22px;
+	margin: 8px 0 0 20px;
+/*	position: absolute;
+	left: 26px;
+	top: 10px;
+	z-index: 10;*/
+}
+h2::after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	transform: rotate(45deg) skew(10deg, 10deg);
+	position: absolute;
+	top: -3px;
+	left: 0;
+	z-index: -1;
+}
+
+.white {
+	filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+}
+.black {
+	filter: brightness(0);
+}
+
+/*===== 配色 =====*/
+/*タイトル*/
+#infoArea h2::after {
+	background-color: #00aaff;
+}
+#ticketArea h2::after {
+	background-color: #bb44ff;
+	background-color: #ff22cc;
+}
+#newsArea h2::after {
+	background-color: #22ddbb;
+}
+#pickupArea h2::after {
+	background-color: #ffee00;
+}
+#artistArea h2::after {
+	background-color: #ffee00;
+}
+#guidelineArea h2::after {
+	background-color: #ee0000;
+}
+#faqArea h2::after {
+	background-color: #886600;
+}
+#aboutArea h2::after {
+	background-color: #9922ee;
+}
+#accessArea h2::after {
+	background-color: #ffaa22;
+}
+
+/*ボタン色*/
+#ticketArea .btn a {
+	border-bottom-color: #9922ee;
+	border-bottom-color: #ff22cc;
+}
+#ticketArea .btn a::after {
+	color: #9922ee;
+	color: #ff22cc;
+}
+#guidelineArea .btn a {
+	border-bottom-color: #ee0000;
+}
+#guidelineArea .btn a::after {
+	color: #ee0000;
+}
+#faqArea .btn a {
+	border-bottom-color: #886600;
+}
+#faqArea .btn a::after {
+	color: #886600;
+}
+#infoArea .btn a {
+	border-bottom-color: #00aaff;
+}
+#infoArea .btn a::after {
+	color: #00aaff;
+}
+
+/*コンテンツページh3*/
+#ticketArea .contents h3{
+	border-color: #9922ee;
+	border-color: #ff22cc;
+}
+#guidelineArea .contents h3{
+	border-color: #ee0000;
+}
+#aboutArea .contents h3 {
+	border-color: #9922ee;
+}
+#accessArea .contents h3 {
+	border-color: #ffaa22;
+}
+#infoArea .contents h3 {
+	border-color: #00aaff;
+}
+
+
+/*=====Header=====*/
+header {
+	/*	background-color: #eee;*/
+	padding: 0;
+	position: relative;
+}
+header::before {
+	content:"";
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-10;
+	width:100%;
+	height:100vh;
+	/*background-image: url(../images/bg_top_sp.jpg);*/
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	-moz-background-size: cover;
+}
+header h1{
+	visibility:hidden;
+	font-size:0;
+}
+header .head_logo {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+header a img:hover{
+	opacity: 1;
+}
+
+
+/*=====INFORMATIONバナー=====*/
+#infoArea {
+	margin: 0 auto;
+}
+ul.info-bnr {
+	list-style-type: none;
+	margin: 2em auto 0px auto;
+	width:100%;
+	box-sizing: border-box;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	-webkit-box-pack:justify;
+	-moz-box-pack:justify;
+	-webkit-flex-pack:justify;
+	-moz-flex-pack:justify;
+	-ms-flex-pack:justify;
+	-webkit-justify-content:space-between;
+	-moz-justify-content:space-between;
+	justify-content:space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+ul.info-bnr li {
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+	margin-bottom: 15px;
+}
+ul.info-bnr li a {
+	font-family: 'ヒラギノ角ゴシック', Hiragino Sans, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ";
+	display: block;
+	background-color: #FFF;
+	border-bottom: 8px solid #00aaff;
+	border-radius: 10px 0 0 0;
+	padding: 1em;
+	font-size: 120%;
+	font-weight: 700;
+	color: #0a140a;
+	position: relative;
+	text-decoration: none;
+}
+ul.info-bnr li a span {
+	display: block;
+	color: #00aaff;
+}
+ul.info-bnr li a:hover {
+	opacity: 0.9;
+}
+ul.info-bnr li.large {
+}
+ul.info-bnr li.large a {
+}
+ul.info-bnr li a::after {
+	font-family: FontAwesome;
+	color: #00aaff;
+	content: "\f105";
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	z-index: 10;
+}
+/*GUIDELINES for COVID-19のアイコン*/
+ul.info-bnr li a .icon_guideline {
+	font-size: 90%;
+	color: #FFF;
+	background-color: #d0121b;
+	padding: 0.3em 1em;
+	max-width: 60%;
+	margin: 5px auto 0 auto;
+}
+
+/*=====TICKET INFO=====*/
+#ticketArea {
+	margin: 0 auto;
+	text-align: left;
+}
+.ticket-info {
+	margin: 2em 0;
+}
+.ticket-info h3{
+	visibility:hidden;
+	font-size:0;
+}
+
+/*=====BOTTUN=====*/
+.btn {
+	display: block;
+}
+.btn+.btn {
+	margin-top: 15px;
+}
+.btn a {
+	font-family: 'ヒラギノ角ゴシック', Hiragino Sans, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ";
+	display: block;
+	background-color: #FFF;
+	border-bottom-style: solid;
+	border-bottom-width: 8px;
+	border-radius: 10px 0 0 0;
+	padding: 1em;
+	font-size: 120%;
+	font-weight: 700;
+	color: #0a140a;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+.btn a::after {
+	font-family: FontAwesome;
+	content: "\f105";
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	z-index: 10;
+}
+.btn a:hover {
+	text-decoration: none;
+	opacity: 0.9;
+}
+
+
+/*=====Banner=====*/
+#bnrArea {
+	margin: 0px auto;
+	padding: 5px 0;
+	padding: 2% 0;
+	background-color: #defa0d;
+	background-color: #145014;
+	border-bottom: 10px solid #defa0d;
+}
+#bnrArea .container{
+	width: 96%;
+	padding: 0;
+}
+#bnrArea ul {
+	list-style: none;
+	box-sizing: border-box;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	-webkit-box-pack:justify;
+	-moz-box-pack:justify;
+	-webkit-flex-pack:justify;
+	-moz-flex-pack:justify;
+	-ms-flex-pack:justify;
+	-webkit-justify-content:space-between;
+	-moz-justify-content:space-between;
+	justify-content:space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+#bnrArea ul li{
+	width: 49%;
+	text-align: center;
+	vertical-align: top;
+}
+#bnrArea ul::after{
+	content :"";
+	display :block;
+	width: 49.0%;
+}
+#bnrArea ul::before{
+	content :"";
+	display :block;
+	width: 49.0%;
+	order:1;
+}
+
+/*=====Footer=====*/
+footer {
+	margin: 0px auto;
+	padding: 2% 0;
+	/*	z-index: 1000;*/
+	background-color: rgba(255,255,255,1);
+}
+footer .footL, footer .footR {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	margin: 10px 0;
+}
+footer .sfp {
+	max-width: 80%;
+}
+footer .icon_sns {
+	display: block;
+	vertical-align: middle;
+}
+footer .icon_sns img {
+	max-height: 35px;
+	margin: 0 3px;
+}
+footer .icon_sns .tw {
+	border-radius: 5px;
+}
+
+footer .backnumber {
+	display: inline-block;
+	vertical-align: top;
+	margin: 4% 0 2% 0;
+	padding: 1%;
+	width: 94%;
+}
+footer .backnumber ul{
+	list-style-type: none;
+	margin: 2% 0 1% 0;
+	letter-spacing: -0.4em;
+}
+footer .backnumber ul li{
+	display: inline-block;
+	vertical-align: middle;
+	border-right: 1px #463214 solid;
+	padding: 0 0.5em;
+	letter-spacing: normal;
+	line-height:1;
+	font-size: 90%;
+}
+footer .backnumber ul li:last-child {
+	border-right: none;
+}
+footer .backnumber ul li a{
+	color: #0a140a;
+	text-decoration: none;
+}
+footer .backnumber ul li a:hover{
+	text-decoration: underline;
+}
+footer .bn_ttl b {
+	background-color: #f5fdb6;
+}
+footer .copyright {
+	text-align: center;
+	font-size: 8px;
+}
+
+
+/* タブレットレイアウト : 481 px 〜 768 px。モバイルレイアウトからスタイルを継承。 */
+
+@media only screen and (min-width: 481px) {
+	.pc{display: none;}
+	.sp{display: inline-block;}
+
+	body {
+		font-size: 110%;
+		-webkit-text-size-adjust: 110%;
+		-moz-text-size-adjust: 110%;
+		-ms-text-size-adjust: 110%;
+		-o-text-size-adjust: 110%;
+		text-size-adjust: 110%;
+	}
+	/*===== タイトル =====*/
+	h2 {
+	}
+	h2 img {
+		max-height: 28px;
+		margin: 4px 0 0 16px;
+	}
+	h2::after {
+		width: 35px;
+		height: 35px;
+		top: -3px;
+		left: 0px;
+	}
+}
+
+
+/* デスクトップレイアウト : 769 px 〜最大 1232 px。モバイルレイアウトとタブレットレイアウトからスタイルを継承。 */
+
+@media only screen and (min-width: 835px) {
+	.fontL{font-size: 120%;}
+	h1 {font-size: 180%;}
+	h2 {font-size: 150%;}
+	h3 {font-size: 150%;}
+	h4 {font-size: 120%;}
+
+	.pc{display: inline-block;}
+	.sp{display: none;}
+
+	body {
+		font-size: 14px;
+		line-height: 1.8;
+		-webkit-text-size-adjust: 14px;
+		-moz-text-size-adjust: 14px;
+		-ms-text-size-adjust: 14px;
+		-o-text-size-adjust: 14px;
+		text-size-adjust: 14px;
+	}
+
+	main {
+		margin-top: -100vh;
+	}
+
+	.container{
+		/*max-width: 800px;*/
+		width: 71%;
+		padding: 0 2% 2em 27%;
+	}
+
+	/*===== タイトル =====*/
+	h2 {
+		margin-left: -20px;
+	}
+	h2 img {
+		max-height: 30px;
+		margin: 8px 0 0 20px;
+	}
+	h2::after {
+		width: 41px;
+		height: 41px;
+		top: -3px;
+		left: 0px;
+	}
+
+	/*=====Header=====*/
+	header{
+	}
+	header::before {
+		height:100vh;
+		/*background-image: url(../images/bg_cont_pc.jpg);*/
+	}
+	header .head_logo {
+		margin-top: 15px;
+	}
+
+	/*=====INFORMATIONバナー=====*/
+	ul.info-bnr li {
+		width: 49%;
+	}
+	ul.info-bnr li.large {
+		width: 100%;
+		font-size: 120%;
+	}
+
+	/*=====Banner=====*/
+	#bnrArea .container{
+/*		max-width: 1100px;*/
+		width: 96%;
+		padding: 0;
+	}
+	#bnrArea ul {
+	}
+	#bnrArea ul li{
+		width: 23.8%;
+		text-align: left;
+	}
+	#bnrArea ul::after,
+	#bnrArea ul::before{
+		width: 23.8%;
+	}
+
+	/*=====TICKET INFO=====*/
+	.ticket-info img {
+		max-width: 80%;
+	}
+
+	/*=====BOTTUN=====*/
+	.btn {
+		display: inline-block;
+	}
+	.btn.block {
+		display: block;
+	}
+	.btn a {
+		padding: 1em 3em;
+	}
+	.btn+.btn {
+		margin-top: 3%;
+		margin-left: 3%;
+	}
+	/*=====Footer=====*/
+	footer .container{
+		width: 96%;
+		padding: 0;
+	}
+	footer .footL {
+		display: inline-block;
+		text-align: left;
+		width: 34%;
+		float: left;
+	}
+	footer .footR {
+		display: inline-block;
+		text-align: right;
+		width: 64%;
+		vertical-align: middle;
+		float: right;
+	}
+	footer .sfp {
+		max-height: 50px;
+		width: auto;
+	}
+	footer .icon_sns {
+		display: inline-block;
+		max-height: 40px;
+		vertical-align: middle;
+	}
+	footer .icon_sns img {
+		max-height: 35px;
+	}
+	footer .backnumber {
+		width: auto;
+/*		max-width: 80%;*/
+		margin: 0 0 0 10px;
+		padding: 1% 0;
+		text-align: left;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	footer .backnumber ul{
+		margin: 0;
+	}
+	footer .backnumber ul li{
+		padding: 0 0.8em;
+		font-size: 90%;
+	}
+	footer .backnumber li:first-child {
+		padding-left: 0;
+	}
+	footer .backnumber li:last-child {
+		padding-right: 0;
+	}
+	footer .copyright {
+		font-size: 10px;
+	}
+
+}

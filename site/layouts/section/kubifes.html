@@ -1,0 +1,41 @@
+{{ define "pageHead" }}
+<!-- <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="/rsc/js/slick/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="/rsc/js/slick/slick.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="/rsc/js/slick/slick.min.js"></script>
+<script type="text/javascript" src="/rsc/js/page/lmc.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".colorbox").colorbox({rel:'img-group',});
+    $(".iframe").colorbox({iframe:true, width:"90%", height:"90%"});
+    $(".ajax").colorbox({innerWidth: 1100, innerHeight: 3300, maxWidth:"98%", maxHeight:"100%", opacity: 0.6});
+});
+</script>
+{{ end }}
+{{ define "main" }}
+
+<!-- {{ partial "jumbotron" (dict "imageUrlPc" .Params.image "imageUrlSp" .Params.image "title" .Title) }} -->
+
+
+
+
+{{ with .Params.main }}
+
+
+<!-- Image grid -->
+{{ partial "artists" . }}
+{{ end }}
+
+<div class="footer-nav fixed z-3" ontouchstart="">
+	<div class="footer-nav-inner">
+		<div class="footer-socials">
+			<a href="https://www.instagram.com/p.d__miyazaki/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/d.p__miyazaki/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</div>
+
+
+{{ end }}

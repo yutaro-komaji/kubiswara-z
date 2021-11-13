@@ -1,0 +1,697 @@
+@charset "UTF-8";
+
+/* モバイルレイアウト : 480 px およびそれ以下. */
+
+/*===== タイトル =====*/
+main section:nth-child(2) h2 {
+	display: inline-block;
+	margin: 1.5em auto;
+	left: 49%;
+	transform: translateX(-49%);
+	-webkit-transform: translateX(-49%);
+	-ms-transform: translateX(-49%);
+}
+
+/*=====コンテンツ背景=====*/
+.bg_white {
+	background-color: rgba(255,255,255,0.8);
+}
+.contents {
+	margin: 0 0 3rem 0;
+}
+.contents h3{
+	text-align: center;
+	margin-bottom: 1em;
+	border-style: solid;
+	border-bottom-width: 2px;
+	border-top-width: 2px;
+	padding: 0.5em 0;
+}
+
+/*余白*/
+.last-column {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+/*=====ARTISTS=====*/
+/*出演アーティスト*/
+ul.artist {
+	list-style-type: none;
+	margin: 2% auto;
+	width:100%;
+	box-sizing: border-box;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	-webkit-box-pack:justify;
+	-moz-box-pack:justify;
+	-webkit-flex-pack:justify;
+	-moz-flex-pack:justify;
+	-ms-flex-pack:justify;
+	-webkit-justify-content:space-between;
+	-moz-justify-content:space-between;
+	justify-content:space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+ul.artist li{
+	width: 49.0%;
+	text-align: center;
+	vertical-align: top;
+	margin-bottom: 20px;
+	padding: 0;
+}
+ul.artist::after{
+	content :"";
+	display :block;
+	width: 49.0%;
+}
+ul.artist::before{
+	content :"";
+	display :block;
+	width: 49.0%;
+	order:1;
+}
+ul.artist li img{
+	width: 100%;
+	display: block;
+	margin-bottom: 5px;
+}
+ul.artist li.new a::before{ /*newアイコン*/
+	content: "";
+	display: block;
+	/*background: url(../images/artist/icon_new.png) no-repeat top left;*/
+	-webkit-background-size:contain;
+	z-index: 100;
+	position: absolute;
+	top: -8px;
+	right: 2px;
+	width: 25%;
+	height: 25%;
+	max-width: 35px;
+	font-size:0;
+	z-index: 100;
+}
+ul.artist li b{
+	font-size: 90%;
+	line-height: 1.2;
+	width: 94%;
+	margin: 0.8em 0;
+	position: relative;
+}
+ul.artist li a{
+	display: block;
+	color: #0a140a;
+	position: relative;
+	text-decoration: none;
+}
+
+ul.artist li a:hover{
+	text-decoration: none;
+}
+.andmore{
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.andmore img{
+	height: 15px;
+}
+/*日付タイトル*/
+.ttl_date{
+	display: block;
+	padding: 30px 0 10px 0;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.ttl_date img{
+	max-height: 20px;
+	width: auto;
+	border-bottom: 8px solid #ffee00;
+
+}
+
+
+/*日付タブボタン*/
+.tabBox {
+	display: block;
+	animation-name: displayAnime;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	margin-bottom: 4%;
+	margin-top: -200px;
+	padding-top: 200px;
+}
+.tabBox.disnon {
+	display: none;
+	opacity: 0;
+}
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.tabDay{
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+}
+.tabDay ul{
+	list-style-type: none;
+	margin: 10px auto;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	-webkit-box-pack:justify;
+	-moz-box-pack:justify;
+	-webkit-flex-pack:justify;
+	-moz-flex-pack:justify;
+	-ms-flex-pack:justify;
+	-webkit-justify-content:space-between;
+	-moz-justify-content:space-between;
+	justify-content:space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+.tabDay li{
+	cursor: pointer;
+	box-sizing: border-box;
+	width: 49%;
+}
+.tabDay li a{
+	display: block;
+	padding: 10px 0;
+	-webkit-transition: none;
+	transition: none;
+	line-height: 1;
+	background-color: #FFF;
+	border-bottom-style: solid;
+	border-bottom-width: 8px;
+	border-bottom-color: #ffee00;
+	border-radius: 10px 10px 0 0;
+	padding: 1em 1.2em 1em 0.8em;
+	font-size: 120%;
+	font-weight: 700;
+	color: #0a140a;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+.tabDay li a::after {
+	font-family: FontAwesome;
+	content: "\f078";
+	position: absolute;
+	top: 51%;
+	right: 6px;
+	transform: translateY(-51%);
+	-webkit-transform: translateY(-51%);
+	z-index: 10;
+}
+.tabDay li.active a, .tabDay li a:hover{
+	opacity: 1;
+	background-color: rgba(255,238,0,0.5);
+	background-color: #ffee00;
+}
+.tabDay li img{
+	max-height: 20px;
+	width: auto;
+}
+
+
+/*=====TICKET=====*/
+#ticketArea h4{
+	margin: 2em 0 0.6em 0;
+	padding-top: 1em;
+	border-top: 1px dashed #0a140a;
+}
+#ticketArea h4.border-top-none{
+	border-top: none;
+	padding-top: 0;
+}
+#ticketArea .caution{
+	padding: 1em;
+	border: 3px solid #ee0000;
+	background-color: rgba(255,255,255,0.6);
+	margin-top: 1em;
+}
+
+ul.ticket_list {
+	list-style-type: none;
+}
+ul.ticket_list li {
+	display: block;
+	padding: 10px 0;
+/*	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:flex;
+	-webkit-box-pack:justify;
+	-moz-box-pack:justify;
+	-webkit-flex-pack:justify;
+	-moz-flex-pack:justify;
+	-ms-flex-pack:justify;
+	-webkit-justify-content:space-between;
+	-moz-justify-content:space-between;
+	justify-content:space-between;
+	flex-direction: column;*/
+	box-sizing: border-box;
+}
+ul.ticket_list li .index b{
+	display: block;
+	width: 35%;
+	font-size: 100%;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 0.3em 1em;
+	font-family: 'ヒラギノ角ゴシック', Hiragino Sans, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ";
+}
+#ticketArea ul.ticket_list li .index b{
+	background-color: #ff22cc;
+	color: #FFF;
+}
+.ticket_day {
+	height: 25px;
+	vertical-align: middle;
+	margin: 0 5px 3px 0px;
+	display: block;
+}
+ul.ticket_list li:first-child {
+	padding-top: 0;
+}
+ul.ticket_list ul li{
+	letter-spacing: normal;
+	padding: 0 0 0 1em;
+}
+
+/*リスト*/
+.list_mark {
+	list-style-type: none;
+	margin: 1em 0;
+}
+.list_mark li{
+	text-indent: -1em;
+	padding-left: 1em;
+	margin: 0.5em 0;
+}
+
+/*チケット情報*/
+.ticket-info+.ticket-info{
+	margin-top: 20px;
+}
+
+/*注意事項*/
+.ticket_caution{
+	font-size: 100%;
+}
+.ticket_caution h2{
+	margin-bottom: 1em;
+}
+.closed {
+	color: #666;
+}
+.closed-icon {
+	background-color: #bbb;
+	color: #e00;
+	font-size: 110%;
+	letter-spacing: 0.1em;
+	padding: 0.2em 2em;
+	margin: 0 0 1rem 0;
+	text-align: center;
+	font-weight: 700;
+	max-width: 30%;
+	position: relative;
+	border-radius: 3px;
+}
+.closed-icon:before {
+	content: "";
+	position: absolute;
+	border: 6px solid transparent;
+	border-top: 12px solid #bbb;
+	top: 100%;
+	left: 47%;
+}
+.sale-icon {
+	background-color: #fff;
+	color: #ff22cc;
+	font-size: 110%;
+	letter-spacing: 0.1em;
+	padding: 0.2em 2em;
+	margin: 0 0 1rem 0;
+	text-align: center;
+	font-weight: 700;
+	max-width: 30%;
+	position: relative;
+	border-radius: 3px;
+	border: 2px solid #ff22cc;
+}
+.sale-icon:before {
+	content: "";
+	position: absolute;
+	border: 6px solid transparent;
+	border-top: 12px solid #ff22cc;
+	top: 100%;
+	left: 47%;
+}
+
+/*ポップアップ*/
+.popup {
+	padding: 2%;
+}
+.popup .ttl{
+	text-align: center;
+	padding: 5px 2% 2px 2%;
+	font-size: 140%;
+	font-weight: bold;
+}
+.member a {
+	background-color: #ddf3ff;
+}
+
+/*=====GUIDELINE=====*/
+#guidelineArea{ /*一覧*/
+}
+#guidelineArea p {
+	margin-bottom: 1em;
+}
+#guidelineArea .update {
+	font-size: 80%;
+	text-align: right;
+	margin-bottom: 2em;
+}
+#guidelineArea h4 {
+	margin: 2em 0 0 0;
+	padding-bottom: 0.3em;
+}
+#guideline .caution {
+	margin-top: 1em;
+}
+#guideline .caution h2 {
+	margin-top: 0;
+}
+
+.gl_icon, .gl_text{
+	display: block;
+	vertical-align: top;
+	letter-spacing: normal;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 100%;
+}
+.gl_icon{
+	text-align: center;
+	padding-top: 1em;
+	border-top: 1px dotted #f70084;
+}
+.gl_icon img{
+	max-width: 30%;
+}
+.gl_text h4{
+	color: #ee0000;
+}
+.gl_text .headline{
+	background-color: #ee0000;
+	color: #FFF;
+	padding: 0.2em 1em;
+}
+
+/*=====FAQ=====*/
+#faqArea h3{
+	border-top: none;
+	margin-top: 2em;
+	margin-bottom: 5px;
+	color: #886600;
+	font-size: 115%;
+}
+#faqArea h3:first-child{
+	margin-top: 0;
+}
+#faqArea p{
+	margin-bottom: 1em;
+}
+#faqArea .btn {
+	margin-top: 5px;
+}
+
+
+/*=====ABOUT=====*/
+#aboutArea .intro{
+	font-weight: 500;
+	line-height: 1.8em;
+	margin-bottom: 4em;
+	font-size: 110%;
+}
+#aboutArea .intro p+p{
+	margin-top: 1.5em;
+}
+#aboutArea .btn_access{
+	margin-left: 20px;
+	max-height: 25px;
+}
+#aboutArea ul.ticket_list li .index b{
+	background-color: #9922ee;
+	color: #FFF;
+}
+
+/*=====ACCESS=====*/
+#accessArea p {
+	margin-bottom: 1.2em;
+}
+.map iframe{
+	max-width: 1000px;
+	height: 300px;
+	margin: 10px auto;
+}
+#accessArea .btn{
+	background-color: #1d2087;
+}
+#accessArea h4{
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+
+/*=====NEWS=====*/
+#newsArea .contents .news_article:nth-child(1) {
+	margin-top: 0;
+}
+.news_article {
+	margin: 2em 0 5em 0;
+	border-top: 2px solid #22ddbb;
+}
+.news_article img {
+	margin: 5px 0;
+}
+.news_date {
+	font-size: 90%;
+	margin-top: 10px;
+}
+.news_ttl {
+	font-size: 120%;
+	line-height: 1.6em;
+	font-weight: 700;
+	margin: 0.3em 0 1.3em 0;
+}
+.news_article p{
+	margin-bottom: 1.2em;
+}
+
+/*=====INFORMATION=====*/
+
+#infoArea p+p{
+	margin-top: 1em;
+}
+#infoArea .btn{
+	margin-top: 2rem;
+}
+
+
+/* タブレットレイアウト : 481 px 〜 768 px。モバイルレイアウトからスタイルを継承。 */
+
+@media only screen and (min-width: 481px) {
+	/*=====ARTISTS=====*/
+	ul.artist li{
+		width: 31.3%;
+		padding: 0;
+		margin-bottom: 30px;
+	}
+	ul.artist::after, ul.artist::before{
+		width: 31.3%;
+	}
+	ul.artist li.new a::before{ /*newアイコン*/
+		max-width: 50px;
+		right: 3px;
+	}
+	ul.artist li b{
+		font-size: 100%;
+	}
+	.andmore img{
+		height: 18px;
+	}
+	/*日付タイトル*/
+	.ttl_date img{
+		max-height: 35px;
+	}
+
+	/*=====NEWS=====*/
+	.news_date {
+		font-size: 80%;
+	}
+
+}
+
+
+/* デスクトップレイアウト : 769 px 〜最大 1232 px。モバイルレイアウトとタブレットレイアウトからスタイルを継承。 */
+
+@media only screen and (min-width: 835px) {
+	/*=====コンテンツ背景=====*/
+	.contents {
+		margin: 0 0 5rem 0;
+	}
+
+	/*=====ARTISTS=====*/
+	ul.artist li{
+		margin-bottom: 40px;
+	}
+	ul.artist li img{
+		margin-bottom: 8px;
+	}
+	ul.artist li.new a::before{ /*newアイコン*/
+		max-width: 70px;
+		right: 4px;
+	}
+	ul.artist li b{
+		font-size: 130%;
+	}
+	.tabDay li a::after {
+		right: 20px;
+	}
+	/*=====TICKET=====*/
+	#ticketArea .caution{
+		padding: 2em 2em 1em 2em;
+		border: 5px solid #ee0000;
+		margin-top: 1em;
+	}
+
+	ul.ticket_list li {
+		padding: 15px 0;
+/*		flex-direction: row;*/
+		letter-spacing: -0.4em;
+	}
+	ul.ticket_list li p, ul.ticket_list li div {
+		letter-spacing: normal;
+		vertical-align: top;
+		display: inline-block;
+	}
+	ul.ticket_list li .index {
+		width: 18.8%;
+		padding-right: 2%;
+	}
+	ul.ticket_list li .index b {
+		width: auto;
+		font-size: 110%;
+		margin: 0 1em 0 0;
+		padding: 0.3em 1em;
+	}
+	ul.ticket_list li .detail {
+		vertical-align: middle;
+		width: 79%;
+	}
+	.closed-icon {
+		margin: 0 1rem 0 0;
+		display: inline-block;
+	}
+	.closed-icon:before {
+		border-top: none;
+		border: 5px solid transparent;
+		border-left: 10px solid #bbb;
+		top: 35%;
+		left: 100%;
+	}
+	.sale-icon {
+		margin: 0 1rem 0 0;
+		display: inline-block;
+		border: 2px solid #ff22cc;
+	}
+	.sale-icon:before {
+		border-top: none;
+		border: 5px solid transparent;
+		border-left: 10px solid #ff22cc;
+		top: 35%;
+		left: 100%;
+	}
+
+
+	/*注意事項*/
+	.ticket_caution{
+		font-size: 110%;
+	}
+	/*ポップアップ*/
+	.popup {
+		padding: 4%;
+	}
+
+	/*=====GUIDELINE=====*/
+	#guidelineArea{ /*一覧*/
+	}
+	#guideline .contents {
+	}
+	#guidelineArea h4 {
+		margin: 0;
+	}
+	.gl_chui{
+		letter-spacing: -0.4em;
+	}
+	.gl_icon, .gl_text{
+		display: inline-block;
+		vertical-align: top;
+		letter-spacing: normal;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	.gl_icon{
+		width: 13%;
+		margin-right: 2%;
+		text-align: left;
+		padding-top: 0;
+		border-top: none;
+	}
+	.gl_icon img{
+		max-width: 100%;
+	}
+	.gl_text{
+		width: 85%;
+	}
+	.gl_img {
+		max-width: 500px;
+		margin: 10px auto;
+	}
+
+	/*=====NEWS=====*/
+	.news_article {
+	}
+	.news_article img {
+		margin: 10px 0;
+		max-width: 85%;
+	}
+	.news_date {
+		font-size: 13px;
+	}
+	.news_ttl {
+		font-size: 20px;
+	}
+
+}
