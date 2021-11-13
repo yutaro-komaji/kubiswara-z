@@ -36,15 +36,15 @@ movie:
     iframeUrl: "xb3MrID_9f8"
 
 live:
-  - title: ''
-    liveImg: ""
-    dateText: 2021.11.3(WED.)
-    timeText: OPEN  17:00 / START 17:30
-    placeText: "豊橋 club KNOT"
-    placeUrl: "https://club-knot.com/"
-    actText: Light My Cigarette / and more...
+  - title: 'ウルトラスピングタイフーン'
+    liveImg: "/img/lmc/img-lmc-live211112.jpg"
+    dateText: 2021.11.12(SAT.)
+    timeText: OPEN  17:30 / START 18:00
+    placeText: "栄 Party'z"
+    placeUrl: "http://rad.radcreation.jp/hall/partyz/"
+    actText: Light My Cigarette / MARIO2BROCK / PRAY FOR ME / INC REASE
     ticket: >
-      Adv:￥???? / Door:￥????
+      Adv:￥2,000 / Door:￥2,500(+D)
 
 description: >
     2018年結成。名古屋発パンクコアバンド。GENKI(Gt./ Vo.) , TumTum(Ba./ Scream) , AKAIKE(Dr./ Cho.)からなる3ピースバンド。

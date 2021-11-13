@@ -71,9 +71,11 @@
 				<h2 class="hdg02 tc pv3">LIVE</h2>
 			</div>
 			{{ range .Params.live }}
-					<div class="mb5 ph3 ph0-ns w-100-m">
+					<div class="mb5 ph3 pb5 w-100-m">
 						<h3 class="f5 w-block-title tc pv3 pt0-m">{{.title}}</h3>
-						<img src="{{.liveImg}}" alt="" class="mb3">
+						<div class="center ph6-ns">
+							<img src="{{.liveImg}}" alt="" class="mb3">
+						</div>
 						<div class="center ph6-ns">
 							<p class="f7 tc mb2 grey-2"><span class="f6 white">{{.dateText}}</span><br>{{.timeText}}</p>
 							<p class="f5 tc mb2 white"><a href="{{ .placeUrl }}" target="_blank">{{.placeText}}</a></p>
